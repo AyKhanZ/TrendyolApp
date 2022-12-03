@@ -1,0 +1,238 @@
+﻿<UserControl x:Class="TrendyolApp.View.FirstView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TrendyolApp.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Name="MyFirstView"
+             xmlns:img="clr-namespace:TrendyolApp.Services.Classes"
+             
+             xmlns:mD="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:vm="clr-namespace:TrendyolApp.ViewModel"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="14"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="Transparent"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             Height="550" Width="800"
+             d:DataContext="{d:DesignInstance vm:FirstViewModel}"
+             >
+
+    <UserControl.Resources>
+        <img:BitmapimageConverterService x:Key="UriToImageConverter"/>
+    </UserControl.Resources>
+    <Border CornerRadius="15">
+        <Border.Background >  
+            <SolidColorBrush Color="White"/>
+        </Border.Background>
+
+        <Border  CornerRadius="10">
+            <Border CornerRadius="10" BorderThickness="5">
+                <Border.Background>
+                    <SolidColorBrush Opacity="0.7" Color="Black"/>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="0.3*"/>
+                    </Grid.RowDefinitions>
+                    <Grid HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="365"/>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Trendyol application" Grid.Column="0"
+                                   Foreground="White" 
+                                   VerticalAlignment="Center" FontSize="14" 
+                                   Grid.ColumnSpan="2" Height="16"/>
+                        <TextBlock Grid.Column="1" Foreground="White" 
+                                   VerticalAlignment="Center" FontSize="24" Height="30">
+                            Balance:
+                        </TextBlock>
+                        <TextBlock Grid.Column="2" Foreground="White"
+                                   VerticalAlignment="Center" FontSize="24" 
+                                   Height="30" Text="{Binding user.Balance}"/>
+                    </Grid>
+                    <Grid Grid.Row="1"  Margin="0,10,0,0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.7*"/>
+                            <ColumnDefinition Width="0.7*"/>
+                            <ColumnDefinition Width="0.7*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" 
+                                Command="{Binding Settings}"
+                                FontSize="30" Margin="35,8,35,8"
+                                mD:ButtonAssist.CornerRadius="25"
+                                Content="{mD:PackIcon Kind=Settings}"/>
+                        <Button Grid.Column="1" 
+                                Command="{Binding PlaceOrder}"
+                                mD:ButtonAssist.CornerRadius="15"
+                                FontSize="20" Margin="8,8,8,8"
+                                >Place Order</Button>
+                        <Button Grid.Column="2" 
+                                Command="{Binding GoToBalanceView}"
+                                mD:ButtonAssist.CornerRadius="25"
+                                FontSize="20" Margin="8,8,8,8"
+                                >Balance</Button>
+                        <Button Grid.Column="3" 
+                                Command="{Binding Declare}"
+                                mD:ButtonAssist.CornerRadius="25"
+                                FontSize="20" Margin="8,8,8,8"
+                                >Declare</Button>
+                        <Button Grid.Column="4" 
+                                Command="{Binding ExitToLogin}"
+                                FontSize="30" Margin="35,8,35,8"
+                                mD:ButtonAssist.CornerRadius="25"
+                                Content="{mD:PackIcon Kind=ExitRun}"/>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Border CornerRadius="20" Background="White" Margin="20,10,20,10">
+                            <TabControl> 
+                                <TabItem Header="Packages" >
+                                    <ListBox FontSize="16" Margin="40,20,40,20"
+                                        ScrollViewer.CanContentScroll="False" 
+                                        ItemsSource="{Binding TabsList.AllPackages}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <DockPanel Width="350px">
+                                                    <StackPanel DockPanel.Dock="Left">
+                                                        <Label Content="Tracking number: "/>
+                                                        <Label Content="Invoice price: "/> 
+                                                        <Label Content="Site name: "/>
+                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Quantity: "/> 
+                                                        <Label Content="Size: "/>
+                                                        <Label Content="Color: "/>
+                                                        <Label Content="Currency: "/>  
+                                                    </StackPanel>
+                                                    <StackPanel DockPanel.Dock="Top">
+                                                        <Label Content="{Binding TrackingNumber}"/>
+                                                        <Label Content="{Binding Price}"/> 
+                                                        <Label Content="{Binding SiteName}"/>
+                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Quantity}"/> 
+                                                        <Label Content="{Binding Size}"/>
+                                                        <Label Content="{Binding Color}"/>
+                                                        <Label Content="{Binding Currency}"/>  
+                                                    </StackPanel>
+                                                    <Image DockPanel.Dock="Bottom" Margin="0 10 0 0" Source="{Binding Invoice}"></Image>
+                                                </DockPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </TabItem>
+                                
+                                <TabItem Header="In abroad warehouse" >
+                                    <ListBox FontSize="16" Margin="40,20,40,20"
+                                        ScrollViewer.CanContentScroll="False"
+                                        ItemsSource="{Binding TabsList.OrdersInAbroadWarehouse}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <DockPanel Width="350px">
+                                                    <StackPanel DockPanel.Dock="Left">
+                                                        <Label Content="Tracking number: "/>
+                                                        <Label Content="Invoice price: "/> 
+                                                        <Label Content="Site name: "/>
+                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Quantity: "/> 
+                                                        <Label Content="Currency: "/>  
+                                                    </StackPanel>
+                                                    <StackPanel DockPanel.Dock="Top">
+                                                        <Label Content="{Binding TrackingNumber}"/>
+                                                        <Label Content="{Binding Price}"/> 
+                                                        <Label Content="{Binding SiteName}"/>
+                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Quantity}"/> 
+                                                        <Label Content="{Binding Currency}"/>  
+                                                    </StackPanel>
+                                                    <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image>
+                                                </DockPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </TabItem>
+                                 
+                                <TabItem Header="Shipped">
+                                    <ListBox FontSize="16" Margin="40,20,40,20" 
+                                        ScrollViewer.CanContentScroll="False"
+                                        ItemsSource="{Binding TabsList.OrdersInShipped}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <DockPanel Width="350px">
+                                                    <StackPanel DockPanel.Dock="Left">
+                                                        <Label Content="Tracking number: "/>
+                                                        <Label Content="Invoice price: "/> 
+                                                        <Label Content="Site name: "/>
+                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Quantity: "/>
+                                                        <Label Content="Currency: "/> 
+                                                    </StackPanel>
+                                                    <StackPanel DockPanel.Dock="Top">
+                                                        <Label Content="{Binding TrackingNumber}"/>
+                                                        <Label Content="{Binding Price}"/> 
+                                                        <Label Content="{Binding SiteName}"/>
+                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Quantity}"/>
+                                                        <Label Content="{Binding Currency}"/> 
+                                                    </StackPanel>
+                                                    <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image>
+                                                </DockPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </TabItem>
+                                 
+                                <TabItem Header="In Filial">
+                                    <ListBox FontSize="16"
+                                        ScrollViewer.CanContentScroll="False"
+                                        Margin="40,20,40,20"
+                                        DockPanel.Dock="Bottom"
+                                        ItemsSource="{Binding TabsList.OrdersInFillial}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <DockPanel Width="350px">
+                                                    <StackPanel DockPanel.Dock="Left">
+                                                        <Label Content="Tracking number: "/>
+                                                        <Label Content="Invoice price: "/> 
+                                                        <Label Content="Site name: "/>
+                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Quantity: "/>
+                                                        <Label Content="Currency: "/>
+                                                    </StackPanel>
+                                                    <StackPanel DockPanel.Dock="Top">
+                                                        <Label Content="{Binding TrackingNumber}"/>
+                                                        <Label Content="{Binding Price}"/> 
+                                                        <Label Content="{Binding SiteName}"/>
+                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Quantity}"/>
+                                                        <Label Content="{Binding Currency}"/> 
+                                                    </StackPanel>
+                                                    <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image> 
+                                                </DockPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </TabItem>
+                            </TabControl>
+                        </Border>
+                    </Grid> 
+                    <DockPanel Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0"> 
+                        <TextBlock DockPanel.Dock="Left" FontSize="20" Foreground="White">Account:</TextBlock>
+                        <TextBlock DockPanel.Dock="Right" Text="{Binding user.UserName}" FontSize="20" Margin="10,0,0,0" Foreground="#DDFFFFFF"/>
+                    </DockPanel> 
+                </Grid>
+            </Border>
+        </Border>
+    </Border>
+</UserControl>

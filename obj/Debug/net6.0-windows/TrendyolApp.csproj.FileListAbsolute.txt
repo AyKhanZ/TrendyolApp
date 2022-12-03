@@ -1,0 +1,158 @@
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.lref
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.exe
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.deps.json
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.runtimeconfig.json
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\GalaSoft.MvvmLight.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.g.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.baml
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.g.resources
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfo.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CopyComplete
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\refint\TrendyolApp.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.genruntimeconfig.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\ref\TrendyolApp.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.CopyLocal.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.g.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\bin\Debug\net6.0-windows\SimpleInjector.dll
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.baml
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.g.cs
+C:\Users\HP\Desktop\Programming Step IT\C#\WPF\HW WPF\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.baml
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.exe
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.deps.json
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.runtimeconfig.json
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\GalaSoft.MvvmLight.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\bin\Debug\net6.0-windows\SimpleInjector.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.AssemblyReference.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.lref
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.baml
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.baml
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.baml
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.g.resources
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfoInputs.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfo.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CoreCompileInputs.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.CopyLocal.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CopyComplete
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\refint\TrendyolApp.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.genruntimeconfig.cache
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\ref\TrendyolApp.dll
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.g.cs
+C:\Users\Zejn_ge96\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.exe
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.deps.json
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.runtimeconfig.json
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\GalaSoft.MvvmLight.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\bin\Debug\net6.0-windows\SimpleInjector.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.lref
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.g.resources
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfo.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.CopyLocal.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CopyComplete
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\refint\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.genruntimeconfig.cache
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\ref\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\UserSettingsView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\UserSettingsView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\PlaceOrderView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\PlaceOrderView.baml
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\DeclareView.g.cs
+C:\Users\HP\Desktop\TrendyolApp12345\TrendyolApp\obj\Debug\net6.0-windows\View\DeclareView.baml
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.exe
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.deps.json
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.runtimeconfig.json
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\GalaSoft.MvvmLight.dll
+C:\Users\HP\Desktop\TrendyolApp\bin\Debug\net6.0-windows\SimpleInjector.dll
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\DeclareView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\PlaceOrderView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\UserSettingsView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp_MarkupCompile.lref
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\DeclareView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\FirstView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\LoginView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\MainView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\PlaceOrderView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\RegistrationView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\UserSettingsView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.g.resources
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.AssemblyInfo.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.CopyLocal.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.csproj.CopyComplete
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\refint\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.pdb
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\TrendyolApp.genruntimeconfig.cache
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\ref\TrendyolApp.dll
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\BalanceView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\BalanceView.baml
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\AdminView.g.cs
+C:\Users\HP\Desktop\TrendyolApp\obj\Debug\net6.0-windows\View\AdminView.baml
