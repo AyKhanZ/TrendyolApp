@@ -117,10 +117,10 @@
                                                 <Label Content="Quantity: "/>
                                                 <Label Content="Currency: "/>
                                                 <Label Content="Size: "/>
-                                                <Label Content="Color: "/> 
+                                                <Label Content="Color: "/>
                                                 <Label Content="Contains liquid: "/>
                                                 <Label Content="In abroad warehouse: "/>
-                                                <Label Content="Shipped: "/> 
+                                                <Label Content="Shipped: "/>
                                                 <Label Content="In fillial: "/>
                                             </StackPanel>
                                             <StackPanel DockPanel.Dock="Top">
@@ -131,17 +131,17 @@
                                                 <Label Content="{Binding Quantity}"/>
                                                 <Label Content="{Binding Currency}"/>
                                                 <Label Content="{Binding Size}"/>
-                                                <Label Content="{Binding Color}"/> 
+                                                <Label Content="{Binding Color}"/>
                                                 <Label Content="{Binding ContainsLiquid}"/>
                                                 <Label Content="{Binding Status.InAbroadwarehouse}"/>
-                                                <Label Content="{Binding Status.Shipped}"/> 
+                                                <Label Content="{Binding Status.Shipped}"/>
                                                 <Label Content="{Binding Status.InFillial}"/>
                                             </StackPanel>
                                             <DockPanel>
-                                                <Image DockPanel.Dock="Right" Source="{Binding Invoice}"></Image> 
+                                                <Image DockPanel.Dock="Right" Source="{Binding Invoice}"></Image>
                                             </DockPanel>
                                         </DockPanel>
-                                        
+
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
                             </ListBox>
@@ -150,12 +150,14 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
-                                <ColumnDefinition/> 
+                                <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <RadioButton Grid.Column="0" Command="{Binding RadioBtnCommand}" IsChecked="{Binding Status.InAbroadwarehouse}" Content="In abroad warehouse" Foreground="#DDFFFFFF"/>
+                            <RadioButton Grid.Column="0" Command="{Binding RadioBtnCommand}" 
+                                         IsChecked="{Binding Status.InAbroadwarehouse}" 
+                                         Content="In abroad warehouse" Foreground="#DDFFFFFF"/>
                             <RadioButton Grid.Column="1" Command="{Binding RadioBtnCommand}" IsChecked="{Binding Status.Shipped}" Content="Shipped" Foreground="#DDFFFFFF"/>
                             <RadioButton Grid.Column="2"  Command="{Binding RadioBtnCommand}" IsChecked="{Binding Status.InFillial}" Content="In fillial" Foreground="#DDFFFFFF"/>
-                            
+
                         </Grid>
                     </Grid>
                 </Grid>
@@ -167,15 +169,3 @@
         </Border>
     </Border>
 </UserControl>
-
-
-
-
-
-<!--
-
-<RadioButton IsChecked="{Binding Status.InFillial}" Content="In fillial"/>
-<RadioButton IsChecked="{Binding Status.Packages}" Content="Packages"/>
-<RadioButton IsChecked="{Binding Status.Orders}" Content="Orders"/>
-
--->

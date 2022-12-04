@@ -45,7 +45,6 @@ public class AdminViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            //UserOrder!.Status = Status; 
             _navigationService?.NavigateTo<LoginViewModel>();
         });
     }
@@ -71,6 +70,5 @@ public class AdminViewModel : ViewModelBase
             UsersOrdersList = Users.UsersDict![Search!].Orders; 
         });
     }    
-   
 }
  

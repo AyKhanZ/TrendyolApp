@@ -182,17 +182,9 @@
                                 Command="{Binding Registration}" Margin="0 0 350 0"
                                 CommandParameter="{Binding ElementName=psWord}"
                                 mD:ButtonAssist.CornerRadius="15" Content="Register"/>
-                    </Grid> 
+                    </Grid>
                 </Grid>
             </Border>
         </Border>
     </Border>
 </UserControl>
-
-
-<!--<Button.CommandParameter>
-    <MultiBinding Converter="{StaticResource ArrayMultiValueConverter}">
-        <Binding ElementName="psWord"/>
-        <Binding ElementName="CpsWord"/>
-    </MultiBinding>
-</Button.CommandParameter>-->

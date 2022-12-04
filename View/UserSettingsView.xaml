@@ -136,7 +136,6 @@
                                  FontSize="16" mD:HintAssist.Hint="Confirm new password:" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0">
-                                 <!--x:Name="CpsWord"-->
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>

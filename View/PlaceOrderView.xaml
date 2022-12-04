@@ -177,8 +177,7 @@
                                 FontSize="22"
                                 mD:ButtonAssist.CornerRadius="15"
                                 Command="{Binding Save}"
-                                >Save</Button>
-                        <!--CommandParameter="{Binding ElementName=psWord}"-->
+                                Content="Save"/>
                     </Grid>
                 </Grid>
             </Border>

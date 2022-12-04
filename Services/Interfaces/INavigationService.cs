@@ -1,11 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using TrendyolApp.Message;
-
-
-namespace TrendyolApp.Services.Interfaces
+namespace TrendyolApp.Services.Interfaces;
+public interface INavigationService
 {
-    public interface INavigationService
-    {
-        public void NavigateTo<T>(ParameterMessage message=null) where T : ViewModelBase;
-    }
+    public void NavigateTo<T>(ParameterMessage message = null) where T : ViewModelBase;
 }

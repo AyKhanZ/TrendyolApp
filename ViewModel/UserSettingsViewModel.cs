@@ -40,12 +40,6 @@ public class UserSettingsViewModel : ViewModelBase
                 Users.UsersDict.Remove(user_info); 
                 user_info = user.UserName;
                 MessageBox.Show(Users.UsersDict.TryAdd(user_info, user).ToString());
-                //Users.UsersDict.Add(user_info, user);
-
-                //Users.UsersDict[user_info].Address = user.Address;
-                //Users.UsersDict[user_info].Serial = user.Serial;
-                //Users.UsersDict[user_info].Phone = user.Phone;
-                //Users.UsersDict[user_info].Fin = user.Fin;
                 _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
             }
             else MessageBox.Show("All rows should be completed!");
