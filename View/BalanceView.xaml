@@ -31,7 +31,7 @@
 
     <Border CornerRadius="15">
         <Border.Background >
-            <ImageBrush ImageSource="C:\Users\HP\Desktop\TrendyolApp\Images\BalanceImage.png"/>
+            <ImageBrush ImageSource="/View/BalanceImage.png" Stretch="UniformToFill"/>
         </Border.Background>
 
         <Border  CornerRadius="10">

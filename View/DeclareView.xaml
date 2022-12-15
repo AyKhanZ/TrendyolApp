@@ -30,7 +30,7 @@
 
     <Border CornerRadius="15">
         <Border.Background >
-            <ImageBrush ImageSource="C:\Users\HP\Desktop\TrendyolApp\Images\DeclareImage.jpg"/>
+            <ImageBrush ImageSource="/View/DeclareImage.jpg" Stretch="UniformToFill"/>
         </Border.Background>
 
         <Border  CornerRadius="10">

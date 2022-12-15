@@ -17,8 +17,7 @@ public class DeclareViewModel : ViewModelBase
     private readonly INavigationService? _navigationService;
     private readonly IMessenger _messenger;
     public DeclareViewModel(INavigationService navigationService, IMessenger messenger)
-    {
-        image = new();
+    { 
         _navigationService = navigationService;
         _messenger = messenger;
         _messenger.Register<ParameterMessage>(this, param =>

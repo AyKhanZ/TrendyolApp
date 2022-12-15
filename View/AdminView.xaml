@@ -26,7 +26,7 @@
 
     <Border CornerRadius="15">
         <Border.Background>
-            <ImageBrush ImageSource="C:\Users\HP\Desktop\TrendyolApp\Images\AdminImage.png"/>
+            <ImageBrush ImageSource="/View/AdminImage.png" Stretch="UniformToFill"/>
         </Border.Background>
         <Border CornerRadius="10" BorderThickness="5" BorderBrush="White">
             <Border.Background>

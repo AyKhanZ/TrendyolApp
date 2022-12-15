@@ -8,11 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="View\AdminImage.png" />
+    <None Remove="View\BalanceImage.png" />
+    <None Remove="View\DeclareImage.jpg" />
+    <None Remove="View\LoginImage.jpg" />
+    <None Remove="View\PlaceOrderImage.jpg" />
+    <None Remove="View\RegistrationImage.png" />
+    <None Remove="View\SettingsImage.png" />
+    <None Remove="View\trendyol_express_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="2.0.9" />
     <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
     <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
     <PackageReference Include="SimpleInjector" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\AdminImage.png" />
+    <Resource Include="View\BalanceImage.png" />
+    <Resource Include="View\DeclareImage.jpg" />
+    <Resource Include="View\LoginImage.jpg" />
+    <Resource Include="View\PlaceOrderImage.jpg" />
+    <Resource Include="View\RegistrationImage.png" />
+    <Resource Include="View\SettingsImage.png" />
+    <Resource Include="View\trendyol_express_logo.png" />
   </ItemGroup>
 
 </Project>

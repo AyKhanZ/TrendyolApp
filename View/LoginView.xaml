@@ -32,7 +32,7 @@
     
     <Border CornerRadius="15">
         <Border.Background >
-            <ImageBrush ImageSource="C:\Users\HP\Desktop\TrendyolApp\Images\LoginImage.jpg"/>
+            <ImageBrush ImageSource="/View/LoginImage.jpg" Stretch="UniformToFill"/>
         </Border.Background>
 
         <Border  CornerRadius="10">
@@ -62,7 +62,7 @@
                     <StackPanel Grid.Row="1" Width="250" Orientation="Vertical"
                                 Margin="270,5,270,10" Grid.RowSpan="2">
                         <Image Width="180" Height="120"
-                            Source="C:\Users\HP\Desktop\TrendyolApp\Images\trendyol_express_logo.png"/>
+                            Source="/View/trendyol_express_logo.png"/>
                         
                         <TextBlock Text="Username"
                                    Foreground="White"

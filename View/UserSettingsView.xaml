@@ -31,7 +31,7 @@
     </UserControl.Resources>
     <Border CornerRadius="15">
         <Border.Background >
-            <ImageBrush ImageSource="C:\Users\HP\Desktop\TrendyolApp\Images\SettingsImage.png"/>
+            <ImageBrush ImageSource="/View/SettingsImage.png" Stretch="UniformToFill"/>
         </Border.Background>
 
         <Border  CornerRadius="10">
