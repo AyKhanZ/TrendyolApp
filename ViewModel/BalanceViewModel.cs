@@ -6,7 +6,8 @@ using TrendyolApp.Model;
 using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message; 
 using TrendyolApp.Services.Classes;
-
+using System.Collections.Generic;
+using System; 
 namespace TrendyolApp.ViewModel;
 public class BalanceViewModel : ViewModelBase
 {
@@ -29,22 +30,22 @@ public class BalanceViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            if (!string.IsNullOrWhiteSpace(Card.NameBankCard)
-            && !string.IsNullOrWhiteSpace(Card.HexCode)
-            && !string.IsNullOrWhiteSpace(Card.Cvv)
-            && !string.IsNullOrWhiteSpace(Card.ValidThru))
+            if (CheckOrder.CheckBalance(Card))
             {
-                Users.UsersDict[user_info].Balance += Card.Balance;
-                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
-            }
-            else MessageBox.Show("All rows are requared!");
+                Users.UsersDict![user_info!].Balance += Convert.ToSingle(Card?.Balance);
+                //Json
+                var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
+                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
+
+                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info!] });
+            } 
         });
     }
     public RelayCommand BackToFirst
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
 }

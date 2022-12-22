@@ -135,7 +135,7 @@
                         <TextBox Grid.Column="1" Grid.Row="2"
                                  FontSize="16" mD:HintAssist.Hint="Confirm new password:" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0">
+                                 Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0" Text="{Binding ConfirmPassword}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>

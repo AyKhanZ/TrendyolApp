@@ -6,7 +6,6 @@ using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message; 
 using TrendyolApp.Services.Classes;
 using System.Collections.Generic;
-
 namespace TrendyolApp.ViewModel;
 public class FirstViewModel : ViewModelBase
 {
@@ -23,6 +22,7 @@ public class FirstViewModel : ViewModelBase
         {
             user = param?.Message as User;
             user_info = user?.UserName;
+            TabsList = new();
             TabsList = TabsService.SortByTabs(user,TabsList); 
         });
     }
@@ -30,37 +30,39 @@ public class FirstViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<UserSettingsViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<UserSettingsViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
     public RelayCommand PlaceOrder
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<PlaceOrderViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<PlaceOrderViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
     public RelayCommand Declare
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<DeclareViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<DeclareViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
     public RelayCommand GoToBalanceView
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<BalanceViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<BalanceViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
     public RelayCommand ExitToLogin
     {
         get => new(() =>
         {
-            var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict);
+            //Json
+            var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
             FileService.SaveData(json, "SerializeJSONAykhan.json");
-            _navigationService?.NavigateTo<LoginViewModel>();
+
+            _navigationService?.NavigateTo<LoginViewModel>(new ParameterMessage() { Message = Users.UsersDict![user_info!] });
         });
     }
 }

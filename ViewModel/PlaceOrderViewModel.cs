@@ -7,7 +7,7 @@ using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message;
 using System;
 using TrendyolApp.Services.Classes;
-
+using System.Collections.Generic;
 namespace TrendyolApp.ViewModel;
 public class PlaceOrderViewModel : ViewModelBase
 {
@@ -31,10 +31,15 @@ public class PlaceOrderViewModel : ViewModelBase
         {
             if (CheckOrder.CheckPlaceOrder(order, user_info))
             {
-                Users.UsersDict![user_info]!.Balance -= Convert.ToInt32(order?.Price);
-                Users.UsersDict![user_info]?.Orders?.Add(order);
+                Users.UsersDict![user_info!]!.Balance -= Convert.ToInt32(order?.Price);
+                Users.UsersDict![user_info!]?.Orders?.Add(order!);
                 order = new();
-                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+
+                //Json
+                var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
+                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
+
+                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info!] });
             }
         });
     }
@@ -42,7 +47,7 @@ public class PlaceOrderViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
 }

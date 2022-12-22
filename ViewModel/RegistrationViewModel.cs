@@ -24,10 +24,14 @@ public class RegistrationViewModel : ViewModelBase
     {
         get => new(param =>
         {
-            user.Password = param.Password;
+            user!.Password = param.Password;
             var a = CheckRegistration.CheckUser(user, ConfirmPassword);
             if (a == null)
             {
+                //Json
+                var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
+                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
+
                 _navigationService?.NavigateTo<LoginViewModel>(new ParameterMessage() { Message = user });
                 user = new();
             }
@@ -38,7 +42,7 @@ public class RegistrationViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<LoginViewModel>();
+            _navigationService?.NavigateTo<LoginViewModel>(new ParameterMessage(){ Message = user});
         });
     }
 }

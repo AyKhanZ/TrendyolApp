@@ -5,5 +5,5 @@ public class BalanceCardService
     public string? HexCode { get; set; }
     public string? Cvv { get; set; }
     public string? ValidThru { get; set; }
-    public float Balance { get; set; } 
+    public string? Balance { get; set; } 
 }

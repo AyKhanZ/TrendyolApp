@@ -5,6 +5,8 @@ using GalaSoft.MvvmLight.Messaging;
 using SimpleInjector;
 using System.Windows;
 using TrendyolApp.Services.Classes;
+using TrendyolApp.Message;
+
 namespace TrendyolApp;
 public partial class App : Application
 {
@@ -22,7 +24,7 @@ public partial class App : Application
     {
         Container = new();
 
-        Container.RegisterSingleton<IMessenger, Messenger>();
+        Container.RegisterSingleton<IMessenger, Messenger>(); 
         Container.RegisterSingleton<INavigationService, NavigationService>();
 
         Container.RegisterSingleton<MainViewModel>();

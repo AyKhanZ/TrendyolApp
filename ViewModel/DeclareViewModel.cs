@@ -7,7 +7,8 @@ using TrendyolApp.Model;
 using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message;  
 using Microsoft.Win32;
-using TrendyolApp.Services.Classes; 
+using TrendyolApp.Services.Classes;
+using System.Collections.Generic;
 namespace TrendyolApp.ViewModel;
 public class DeclareViewModel : ViewModelBase
 {
@@ -30,16 +31,20 @@ public class DeclareViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            order.Color = "Black";
-            order.Size = "M";
+            order!.Color = "Black";
+            order!.Size = "M";
             if (CheckOrder.CheckDeclareOrder(order, user_info))
             {
-                Users.UsersDict![user_info]!.Balance -= Convert.ToInt32(order?.Price) * Convert.ToInt32(order?.Quantity);
-                Users.UsersDict![user_info]!.Balance -= Convert.ToInt32(order?.ShopDeliveryPrice) * Convert.ToInt32(order?.Quantity);
+                Users.UsersDict![user_info!]!.Balance -= Convert.ToInt32(order?.Price) * Convert.ToInt32(order?.Quantity);
+                Users.UsersDict![user_info!]!.Balance -= Convert.ToInt32(order?.ShopDeliveryPrice) * Convert.ToInt32(order?.Quantity);
 
-                Users.UsersDict[user_info]?.Orders?.Add(order);
+                Users.UsersDict[user_info!]?.Orders?.Add(order!);
                 order = new();
-                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+                //Json
+                var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
+                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
+
+                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info!] });
             }
         });
     }
@@ -49,15 +54,15 @@ public class DeclareViewModel : ViewModelBase
         openImage.Filter = "Image files(*.PNG, *.JPG, *.BMP)|*.png;*.jpg;*.bmp";
         if (openImage.ShowDialog() == true)
         {
-            order.Invoice = new Uri(openImage.FileName);
-            image = new(order.Invoice);
+            order!.Invoice = new Uri(openImage.FileName);
+            image = new(order!.Invoice);
         }
     });
     public RelayCommand BackToFirst
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict![user_info!] });
         });
     }
 }

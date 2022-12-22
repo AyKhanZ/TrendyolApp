@@ -68,7 +68,7 @@
                                    HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
                                    VerticalAlignment="Center" Height="24" Width="300"/>
                         <TextBox Grid.Row="1" Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="750" mD:HintAssist.Hint="Ex: www.trendyol.com"
+                                 BorderBrush="DarkGray" Height="30" Width="750" mD:HintAssist.Hint="Ex: http://Trendyol"
                                  Margin="10 0 0 0" FontSize="16" Text="{Binding order.Link}"
                                  HorizontalAlignment="Left">
                             <TextBox.Background>

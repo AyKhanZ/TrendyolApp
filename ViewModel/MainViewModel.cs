@@ -10,16 +10,16 @@ namespace TrendyolApp.ViewModel;
 public class MainViewModel : ViewModelBase
 { 
     public ViewModelBase? CurrentViewModel { get; set; }
-    private readonly IMessenger _messenger;
+    private readonly IMessenger _messenger; 
     public MainViewModel(IMessenger messenger)
     {
         CurrentViewModel = App.Container?.GetInstance<LoginViewModel>();
 
-        _messenger = messenger;
+        _messenger = messenger; 
 
         _messenger.Register<NavigationMessage?>(this, message =>
         {
-            var viewModel = App.Container?.GetInstance(message?.ViewModelType) as ViewModelBase;
+            var viewModel = App.Container?.GetInstance(message?.ViewModelType!) as ViewModelBase;
             CurrentViewModel = viewModel;
         });
     }
@@ -27,7 +27,8 @@ public class MainViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict);
+            //json
+            var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
             FileService.SaveData(json, "SerializeJSONAykhan.json");
             App.Current.Shutdown();
         });

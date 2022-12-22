@@ -1,6 +1,2 @@
-﻿namespace TrendyolApp.Message
-{
-    public interface ISendable
-    {
-    }
-}
+﻿namespace TrendyolApp.Message;
+public interface ISendable { }

@@ -6,13 +6,14 @@ using TrendyolApp.Model;
 using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message;
 using System.Windows.Controls;
-
+using TrendyolApp.Services.Classes;
+using System.Collections.Generic;
 namespace TrendyolApp.ViewModel;
 public class UserSettingsViewModel : ViewModelBase
 {
     public string? user_info { get; set; } = " ";
     public User? user { get; set; } = new();
-
+    public string? ConfirmPassword { set; get; }
     private readonly INavigationService? _navigationService;
     private readonly IMessenger? _messenger;
     public UserSettingsViewModel(INavigationService navigationService, IMessenger messenger)
@@ -30,26 +31,26 @@ public class UserSettingsViewModel : ViewModelBase
         get => new(param =>
         { 
             user!.Password = param?.Password;
-            if (!string.IsNullOrWhiteSpace(user?.Address)
-            && !string.IsNullOrWhiteSpace(user.UserName)
-            && !string.IsNullOrWhiteSpace(user?.Password) 
-            && !string.IsNullOrWhiteSpace(user?.Serial)
-            && !string.IsNullOrWhiteSpace(user?.Phone)
-            && !string.IsNullOrWhiteSpace(user?.Fin))
-            {
-                Users.UsersDict.Remove(user_info); 
+            var a = CheckRegistration.CheckUser(user, ConfirmPassword);
+            if(a == null) { 
+                Users.UsersDict?.Remove(user_info!); 
                 user_info = user.UserName;
-                MessageBox.Show(Users.UsersDict.TryAdd(user_info, user).ToString());
-                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+                var flag = Users.UsersDict?.TryAdd(user_info!, user).ToString();
+
+                //Json
+                var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
+                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
+
+                _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict?[user_info!] });
             }
-            else MessageBox.Show("All rows should be completed!");
+            else MessageBox.Show(a);
         });
     }
     public RelayCommand BackToFirst
     {
         get => new(() =>
         {
-            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict[user_info] });
+            _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict?[user_info!] });
         });
     }
 }

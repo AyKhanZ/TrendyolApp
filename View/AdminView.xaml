@@ -50,20 +50,32 @@
                                FontSize="24" Width="105" Height="30"/>
                 <Grid Grid.Row="2" Margin="0,0,0,5">
                     <Border CornerRadius="20" Background="White" Margin="10,3,20,3">
-                        <ListBox Background="White" Grid.Row="1"
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <ListBox Background="White" Grid.Row="1"
                                      ScrollViewer.CanContentScroll="False" FontSize="14"
                                      Margin="40,10,40,11" DockPanel.Dock="Bottom"
-                                     ItemsSource="{Binding ListOfUsersForSharing}">
-                            <ListBox.ItemTemplate>
-                                <DataTemplate>
-                                    <DockPanel Width="500px">
-                                        <StackPanel DockPanel.Dock="Top">
-                                            <Label FontSize="18" Content="{Binding UserName}"/>
-                                        </StackPanel>
-                                    </DockPanel>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
-                        </ListBox>
+                                     ItemsSource="{Binding ListOfUsersForSharing}"
+                                     SelectedItem="{Binding user}">
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <DockPanel Width="500px">
+                                            <StackPanel DockPanel.Dock="Top">
+                                                <Label FontSize="18" Content="{Binding UserName}"/>
+                                            </StackPanel>
+                                        </DockPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Button Grid.Column="1" Width="50" Height="35" FontSize="18" mD:ButtonAssist.CornerRadius="10"
+                            Command="{Binding SearchCommand}" Padding="2,2,2,2" Background="#FF673AB7">
+                                <mD:PackIcon Kind="Search" Width="25" Height="25"/>
+                            </Button>
+                        </Grid>
                     </Border>
                 </Grid>
                 <Grid Grid.Row="3">
@@ -73,26 +85,17 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="530"/>
+                            <ColumnDefinition Width="130"/>
+                            <ColumnDefinition Width="380"/>
                             <ColumnDefinition Width="130"/>
                             <ColumnDefinition Width="130"/>
                         </Grid.ColumnDefinitions>
-                        <Border CornerRadius="20" Background="White" Margin="10,5,10,5">
-                            <DockPanel Grid.Column="0" Margin="10 1 5 1" >
-                                <TextBox FontSize="22" Foreground="#FF673AB7" Text="{Binding Search}"
-                                    mD:HintAssist.Hint="Enter username" Height="40" Width="410" 
-                                    DockPanel.Dock="Right" Margin="0,0,20,0" BorderBrush="#FF673AB7"/>
-                                <Button  
-                                    Width="40" Height="35" FontSize="18" mD:ButtonAssist.CornerRadius="10"
-                                    Command="{Binding SearchCommand}" Padding="2,2,2,2" Background="#FF673AB7">
-                                    <mD:PackIcon Kind="Search" Width="25" Height="25"/>
-                                </Button>
-                            </DockPanel>
-                        </Border>
+                        
+                        <TextBlock Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Orders:" Height="30" Width="80" FontSize="24" Margin="222,0,0,8" Foreground="#DDFFFFFF"/>
                         <Button Content="Delete" FontSize="20" Background="#FF673AB7"
                                 mD:ButtonAssist.CornerRadius="10" Command="{Binding Delete}" Margin="5" 
-                                Grid.Column="1" Width="110" Height="35"/>
-                        <Button Grid.Column="2" Content="Delete All" HorizontalAlignment="Center"
+                                Grid.Column="2" Width="110" Height="35"/>
+                        <Button Grid.Column="3" Content="Delete All" HorizontalAlignment="Center"
                                 mD:ButtonAssist.CornerRadius="10" Margin="10" Height="35" FontSize="16"
                                 Command="{Binding DeleteAll}" Width="110"/>
                     </Grid>
