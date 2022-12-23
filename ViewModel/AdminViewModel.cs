@@ -21,8 +21,6 @@ public class AdminViewModel : ViewModelBase
     //Статус одного конкретного товара который выделил юзер
     public StatusOfOrders? Status { get; set; } = new();
     public User? user { get; set; } = new();
-    //public string? Search { get; set; } = "";
-    //public string? user_name { get; set; } = "";
     private readonly INavigationService? _navigationService; 
     private readonly IMessenger? _messenger;
     public AdminViewModel(INavigationService? navigationService,IMessenger messenger)
