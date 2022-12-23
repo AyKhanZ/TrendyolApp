@@ -86,6 +86,7 @@
                                    Text="Username" Foreground="White"
                                    HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="0"
+                                     MaxLength="15"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" mD:HintAssist.Hint="Ex: Elvin21"
                                  Height="30" Width="220" Margin="0,0,30,0" FontSize="16"
@@ -98,6 +99,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="0" Height="30" 
+                                     MaxLength="25"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" Margin="0,22,10,21" FontSize="16" mD:HintAssist.Hint="Ex: elvinazimov21@gmail.com"
                                  Text="{Binding user.Address}">
@@ -110,6 +112,7 @@
                                    FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
 
                         <PasswordBox Grid.Column="1" Grid.Row="1" FontSize="16"
+                                     MaxLength="15"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" Height="30" Width="220" 
                                  x:Name="psWord" 
@@ -123,6 +126,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="1"
+                                     MaxLength="10"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" Height="30" Width="220" 
                                  Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="Ex: 050 650 43 21"
@@ -136,6 +140,7 @@
                                    x:Name="CpsWord" Text="Confirm"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="2" FontSize="16"
+                                     MaxLength="15"
                                  Text="{Binding ConfirmPassword}"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" Height="30" Width="220" mD:HintAssist.Hint="Ex: Elvin123" 
@@ -148,8 +153,9 @@
                                    Text="FIN" Foreground="White" HorizontalAlignment="Center"
                                    FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="2"
+                                     MaxLength="9"
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="Ex: 3FXh2c8"
+                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="Ex: 3FXh2C8"
                                  Text="{Binding user.Fin}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
@@ -160,6 +166,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="3" FontSize="16"
+                                     MaxLength="10"
                                  Foreground="White" CaretBrush="LightGray"
                                  BorderBrush="DarkGray" Height="30" Width="220" 
                                  AllowDrop="False" Margin="0,0,30,0" mD:HintAssist.Hint="Ex: MM 100 345 098 211" 

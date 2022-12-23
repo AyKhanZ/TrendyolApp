@@ -90,6 +90,7 @@
                                        HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
                                        VerticalAlignment="Center" Height="24" Width="100"/>
                             <TextBox Grid.Row="3" 
+                                     MaxLength="30" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="367" Margin="10 0 0 0" FontSize="16" 
                                  mD:HintAssist.Hint="Ex: Trendyol.com"
@@ -104,6 +105,7 @@
                                        HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
                                        VerticalAlignment="Center" Height="24" Width="200"/>
                             <TextBox Grid.Row="5" 
+                                     MaxLength="6" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="240" Margin="10 0 0 0" mD:HintAssist.Hint="Ex: 1234"
                                  FontSize="16" Text="{Binding order.TrackingNumber}" HorizontalAlignment="Left">
@@ -117,6 +119,7 @@
                                        HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
                                        VerticalAlignment="Center" Height="24" Width="200"/>
                             <TextBox Grid.Row="7" 
+                                     MaxLength="10" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="367" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: Clothes"
                                  Text="{Binding order.ProductCategory}" HorizontalAlignment="Left">
@@ -145,6 +148,7 @@
                                 </Grid.ColumnDefinitions>
                                 
                                 <TextBox Grid.Column="0"
+                                     MaxLength="6" 
                                     Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                     Height="30" Width="170" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: 10$"
                                     Text="{Binding order.Price}" HorizontalAlignment="Left">
@@ -177,6 +181,7 @@
                                        HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
                                        VerticalAlignment="Center" Height="24" Width="100"/>
                             <TextBox Grid.Row="1" 
+                                     MaxLength="4" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="240" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: 1"
                                  Text="{Binding order.Quantity}" HorizontalAlignment="Left">
@@ -194,6 +199,7 @@
                                    VerticalAlignment="Top" Height="24" Width="100"/>
                             
                             <TextBox Grid.Row="3" 
+                                     MaxLength="40" 
                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                 Height="30" Width="320" Margin="10,0,0,0" FontSize="16" mD:HintAssist.Hint=" . . ."
                                 Text="{Binding order.Notes}" HorizontalAlignment="Left" VerticalAlignment="Center">

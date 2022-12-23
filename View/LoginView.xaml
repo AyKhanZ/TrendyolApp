@@ -71,6 +71,7 @@
                                    Margin="0,15,0,5"/>
                         <DockPanel>
                             <TextBox FontSize="14"
+                                     MaxLength="15" 
                                  Foreground="White"
                                  Background="Transparent"
                                  CaretBrush="LightGray"
@@ -86,6 +87,7 @@
                                    FontSize="16" Margin="0,15,0,5"/>
                         <DockPanel>
                             <PasswordBox FontSize="14"
+                                         MaxLength="15"
                                  Foreground="White"
                                  Background="Transparent"
                                  CaretBrush="LightGray"

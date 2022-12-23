@@ -22,24 +22,24 @@ public static class CheckRegistration
                     {
                         if (user?.Password == confirmPassword)
                         {
-                            if (Regex.IsMatch((user?.Serial!), @"^[a-zA-Z]{2,3}(\d{7,15})$"))
+                            if (Regex.IsMatch((user?.Serial!), @"^[A-Z]{2,3}(\d{7,10})$"))
                             {
-                                if (Regex.IsMatch((user?.Address!), @"^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$"))
+                                if (Regex.IsMatch((user?.Address!), @"^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,50}$"))
                                 {
                                     if (Regex.IsMatch((user?.Phone!), @"^(070)|(050)|(010)|(055)|(051)|(077)[0-9]$") && user?.Phone!.Length == 10)
                                     {
-                                        if (Regex.IsMatch((user?.Fin!), @"^[a-zA-Z0-9]{6,9}$"))
+                                        if (Regex.IsMatch((user?.Fin!), @"^[A-Z0-9]{6,9}$"))
                                         {
                                             Users.UsersDict.Add(user!.UserName, user);
                                             return null;
                                         }
-                                        return "FIN number must have 6-9 symbols of alphabits and digits \n(Ex: 7FCW2x2)";
+                                        return "FIN number must have 6-9 symbols of upper alphabits and digits \n(Ex: 7FCW2X2)";
                                     }
                                     return "Phone number must be az-format and contains 10 simbols";
                                 }
-                                return "Invalid email! Email must contain '@',digits,althabits and length must be more than 1 and less than 63 !";
+                                return "Invalid email! Email must contain '@',digits,althabits!";
                             }
-                            return "Serial in the beginning must have 2-3 english alphabit and 7-15 digits!\n(Ex: AA1234567 or Aab1234567890)";
+                            return "Serial in the beginning must have 2-3 upper english alphabit and 7-10 digits!\n(Ex: AA1234567 or AKP1234567)";
                         }
                         return "Password is not equal confirm password!";
                     }

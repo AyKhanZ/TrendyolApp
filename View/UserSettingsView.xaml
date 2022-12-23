@@ -82,6 +82,7 @@
                                    Text="Username" Foreground="White"
                                    HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="0"
+                                     MaxLength="15"
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray" 
                                  Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New login:" 
                                  Text="{Binding user.UserName}">
@@ -94,6 +95,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="0"
+                                     MaxLength="25"
                                  Height="30" Width="220" mD:HintAssist.Hint="New Address:" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Margin="0,0,30,0" FontSize="16"
@@ -107,6 +109,7 @@
                                    Text="Password" Foreground="White" HorizontalAlignment="Center" 
                                    FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
                         <PasswordBox Grid.Column="1" Grid.Row="1"
+                                     MaxLength="20"
                                  FontSize="16" mD:HintAssist.Hint="New password:" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  x:Name="psWord"
@@ -120,6 +123,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="1"
+                                     MaxLength="10"
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New phone number:" 
                                  Text="{Binding user.Phone}">
@@ -133,6 +137,7 @@
                                    HorizontalAlignment="Center" FontSize="20" 
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="2"
+                                     MaxLength="20"
                                  FontSize="16" mD:HintAssist.Hint="Confirm new password:" 
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0" Text="{Binding ConfirmPassword}">
@@ -144,6 +149,7 @@
                                    Text="FIN" Foreground="White" HorizontalAlignment="Center"
                                    FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="2"
+                                     MaxLength="9"
                                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New FIN:" 
                                  Text="{Binding user.Fin}">
@@ -157,6 +163,7 @@
                                    HorizontalAlignment="Center" FontSize="20"
                                    VerticalAlignment="Center" Height="24" Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="3"  FontSize="16"
+                                     MaxLength="10"
                                  Foreground="White"  CaretBrush="LightGray" BorderBrush="DarkGray"
                                  Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0" mD:HintAssist.Hint="New serial: " 
                                  Text="{Binding user.Serial}">
