@@ -7,7 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              
-             
              xmlns:mD="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:vm="clr-namespace:TrendyolApp.ViewModel"
              TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -19,8 +18,7 @@
              FontFamily="{DynamicResource MaterialDesignFont}"
              Height="550" Width="800"
              d:DataContext="{d:DesignInstance vm:UserSettingsViewModel}"
-             Name="MyUserSettingsView"
-             >
+             Name="MyUserSettingsView">
     <UserControl.Resources>
         <ResourceDictionary>
             <Style TargetType="Label" x:Name="boldLabel">
@@ -35,7 +33,11 @@
         </Border.Background>
 
         <Border  CornerRadius="10">
-            <Border CornerRadius="10" BorderThickness="5" Opacity="1" RenderTransformOrigin="0.5,0.532" BorderBrush="White">
+            <Border CornerRadius="10"
+                    BorderThickness="5" 
+                    Opacity="1"
+                    RenderTransformOrigin="0.5,0.532"
+                    BorderBrush="White">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" Opacity="0.6">
@@ -56,14 +58,19 @@
                             <ColumnDefinition Width="295"/>
                             <ColumnDefinition Width="0"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Settings" Grid.Column="0"
+                        <TextBlock Text="Settings" 
+                                   Grid.Column="0"
                                    Foreground="White"
-                                   VerticalAlignment="Center" FontSize="14" Grid.ColumnSpan="2" Height="16"/>
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Grid.ColumnSpan="2"
+                                   Height="16"/>
                         <TextBlock Text="Change datas:" Grid.Column="1"
-                               Foreground="White"
-                               HorizontalAlignment="Center"
-                               FontSize="20"  Height="22" FontWeight="Bold"/>
-                            
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   Height="22" 
+                                   FontWeight="Bold"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
@@ -78,100 +85,176 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Column="0" Grid.Row="0"
-                                   Text="Username" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="0"
+                                   Text="Username"
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20" 
+                                   VerticalAlignment="Center" 
+                                   Height="24"
+                                   Width="91"/>
                         <TextBox Grid.Column="1" Grid.Row="0"
-                                     MaxLength="15"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray" 
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New login:" 
+                                 MaxLength="15"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray" 
+                                 BorderBrush="DarkGray" 
+                                 Height="30" Width="220" 
+                                 Margin="0,0,30,0"
+                                 FontSize="16" 
+                                 mD:HintAssist.Hint="New login:" 
                                  Text="{Binding user.UserName}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="2" Grid.Row="0"
-                                   Text="Address" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="3" Grid.Row="0"
-                                     MaxLength="25"
-                                 Height="30" Width="220" mD:HintAssist.Hint="New Address:" 
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Margin="0,0,30,0" FontSize="16"
+                        <TextBlock Grid.Column="2" 
+                                   Grid.Row="0"
+                                   Text="Address" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20"
+                                   VerticalAlignment="Center" 
+                                   Height="24"
+                                   Width="91"/>
+                        <TextBox Grid.Column="3" 
+                                 Grid.Row="0"
+                                 MaxLength="30"
+                                 Height="30" 
+                                 mD:HintAssist.Hint="New Address:" 
+                                 Foreground="White" 
+                                 CaretBrush="LightGray" 
+                                 BorderBrush="DarkGray"
+                                 Margin="0,26,10,26"
+                                 FontSize="16"
                                  Text="{Binding user.Address}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
 
-                        <TextBlock Grid.Column="0" Grid.Row="1"
-                                   Text="Password" Foreground="White" HorizontalAlignment="Center" 
-                                   FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="1"
+                                   Text="Password" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20" 
+                                   VerticalAlignment="Center"
+                                   Height="24" Width="91"/>
                         <PasswordBox Grid.Column="1" Grid.Row="1"
                                      MaxLength="20"
-                                 FontSize="16" mD:HintAssist.Hint="New password:" 
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 x:Name="psWord"
-                                 Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0">
+                                     FontSize="16" 
+                                     mD:HintAssist.Hint="New password:" 
+                                     Foreground="White" 
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray"
+                                     x:Name="psWord"
+                                     Height="30" 
+                                     Width="220"
+                                     AllowDrop="False" 
+                                     Margin="0,0,30,0">
                             <PasswordBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </PasswordBox.Background>
                         </PasswordBox>
-                        <TextBlock Grid.Column="2" Grid.Row="1"
-                                   Text="Phone" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="3" Grid.Row="1"
-                                     MaxLength="10"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New phone number:" 
+                        <TextBlock Grid.Column="2" 
+                                   Grid.Row="1"
+                                   Text="Phone" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20"
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="3" 
+                                 Grid.Row="1"
+                                 MaxLength="10"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray" 
+                                 BorderBrush="DarkGray"
+                                 Height="30" Width="220"
+                                 Margin="0,0,30,0" 
+                                 FontSize="16"
+                                 mD:HintAssist.Hint="New phone number:" 
                                  Text="{Binding user.Phone}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
 
-                        <TextBlock Grid.Column="0" Grid.Row="2"
-                                   Text="Confirm" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20" 
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="1" Grid.Row="2"
-                                     MaxLength="20"
-                                 FontSize="16" mD:HintAssist.Hint="Confirm new password:" 
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0" Text="{Binding ConfirmPassword}">
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="2"
+                                   Text="Confirm"
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   VerticalAlignment="Center"
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="1"
+                                 Grid.Row="2"
+                                 MaxLength="20"
+                                 FontSize="16" 
+                                 mD:HintAssist.Hint="Confirm new password:" 
+                                 Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 Height="30" Width="220"
+                                 AllowDrop="False"
+                                 Margin="0,0,30,0" 
+                                 Text="{Binding ConfirmPassword}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
                         <TextBlock Grid.Column="2" Grid.Row="2"
-                                   Text="FIN" Foreground="White" HorizontalAlignment="Center"
-                                   FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="3" Grid.Row="2"
-                                     MaxLength="9"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="New FIN:" 
+                                   Text="FIN" 
+                                   Foreground="White" 
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="3"
+                                 Grid.Row="2"
+                                 MaxLength="9"
+                                 Foreground="White"
+                                 CaretBrush="LightGray" 
+                                 BorderBrush="DarkGray"
+                                 Height="30" Width="220" 
+                                 Margin="0,0,30,0" FontSize="16" 
+                                 mD:HintAssist.Hint="New FIN:" 
                                  Text="{Binding user.Fin}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
 
-                        <TextBlock Grid.Column="0" Grid.Row="3"
-                                   Text="Serial" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="1" Grid.Row="3"  FontSize="16"
-                                     MaxLength="10"
-                                 Foreground="White"  CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" AllowDrop="False" Margin="0,0,30,0" mD:HintAssist.Hint="New serial: " 
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="3"
+                                   Text="Serial" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20"
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="1" Grid.Row="3" 
+                                 FontSize="16"
+                                 MaxLength="10"
+                                 Foreground="White"  
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 Height="30" Width="220" 
+                                 AllowDrop="False" 
+                                 Margin="0,0,30,0" 
+                                 mD:HintAssist.Hint="New serial: " 
                                  Text="{Binding user.Serial}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        
+
                     </Grid>
                     <Grid Grid.Row="3">
                         <Grid.ColumnDefinitions>
@@ -179,16 +262,23 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="0"
-                                Width="80" Height="50" FontSize="40"
-                                Command="{Binding BackToFirst}" HorizontalAlignment="Right"
+                                Width="80" 
+                                Height="50" 
+                                FontSize="40"
+                                Command="{Binding BackToFirst}" 
+                                HorizontalAlignment="Right"
                                 mD:ButtonAssist.CornerRadius="10" 
-                                Content="{mD:PackIcon Kind=ArrowBack, Size=40 }" FontWeight="Normal"/>
+                                Content="{mD:PackIcon Kind=ArrowBack, Size=40 }" 
+                                FontWeight="Normal"/>
                         <Button Grid.Column="1" 
-                                Width="200" Height="50" FontSize="26"
+                                Width="200" 
+                                Height="50" 
+                                FontSize="26"
                                 CommandParameter="{Binding ElementName=psWord}"
-                                Command="{Binding Save}" Content="Save"
+                                Command="{Binding Save}" 
+                                Content="Save"
                                 mD:ButtonAssist.CornerRadius="15"/>
-                    </Grid> 
+                    </Grid>
                 </Grid>
             </Border>
         </Border>

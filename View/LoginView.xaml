@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TrendyolApp.View"
              mc:Ignorable="d" 
-
              d:DesignHeight="450" d:DesignWidth="800"
              
              xmlns:mD="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -37,7 +36,6 @@
 
         <Border  CornerRadius="10">
             <Border CornerRadius="10" BorderThickness="5" Opacity="1" RenderTransformOrigin="0.5,0.532" BorderBrush="White">
-
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" Opacity="0.6">
                         <GradientStop Color="Black" Offset="0"/>
@@ -57,10 +55,18 @@
                             <ColumnDefinition Width="40"/>
                             <ColumnDefinition Width="40"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="LOG IN" Grid.Column="0" Foreground="White" VerticalAlignment="Center" FontSize="14" Grid.ColumnSpan="2"/>
+                        <TextBlock Text="LOG IN" 
+                                   Grid.Column="0" 
+                                   Foreground="White" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Grid.ColumnSpan="2"/>
                     </Grid>
-                    <StackPanel Grid.Row="1" Width="250" Orientation="Vertical"
-                                Margin="270,5,270,10" Grid.RowSpan="2">
+                    <StackPanel Grid.Row="1" 
+                                Width="250" 
+                                Orientation="Vertical"
+                                Margin="270,5,270,10"
+                                Grid.RowSpan="2">
                         <Image Width="180" Height="120"
                             Source="/View/trendyol_express_logo.png"/>
                         
@@ -72,36 +78,51 @@
                         <DockPanel>
                             <TextBox FontSize="14"
                                      MaxLength="15" 
-                                 Foreground="White"
-                                 Background="Transparent"
-                                 CaretBrush="LightGray"
-                                 BorderBrush="DarkGray"
-                                 BorderThickness="0,0,0,1"
-                                 Text="{Binding user_info}"
-                                 mD:HintAssist.Hint="Enter username"
-                                 Height="30" Width="236" DockPanel.Dock="Right" Margin="0,10,-6,0"/>
-                            <mD:PackIcon Kind="Contact" DockPanel.Dock="Left" VerticalAlignment="Center" Foreground="#DDFFFFFF"/>
+                                     Foreground="White"
+                                     Background="Transparent"
+                                     CaretBrush="LightGray"
+                                     BorderBrush="DarkGray"
+                                     BorderThickness="0,0,0,1"
+                                     Text="{Binding user_info}"
+                                     mD:HintAssist.Hint="Enter username"
+                                     Height="30" Width="236" 
+                                     DockPanel.Dock="Right"
+                                     Margin="0,10,-6,0"/>
+                            <mD:PackIcon Kind="Contact" 
+                                         DockPanel.Dock="Left" 
+                                         VerticalAlignment="Center" 
+                                         Foreground="#DDFFFFFF"/>
                         </DockPanel>
                         <TextBlock Text="Password"
-                                   Foreground="White" HorizontalAlignment="Left"
-                                   FontSize="16" Margin="0,15,0,5"/>
+                                   Foreground="White" 
+                                   HorizontalAlignment="Left"
+                                   FontSize="16" 
+                                   Margin="0,15,0,5"/>
                         <DockPanel>
                             <PasswordBox FontSize="14"
                                          MaxLength="15"
-                                 Foreground="White"
-                                 Background="Transparent"
-                                 CaretBrush="LightGray"
-                                 BorderBrush="DarkGray"
-                                 Height="30"
-                                 Name="Pass"
-                                 mD:HintAssist.Hint="Enter password" 
-                                 Width="236" DockPanel.Dock="Right" Margin="0,10,-6,0"/>
-                            <mD:PackIcon Kind="Password" DockPanel.Dock="Left" VerticalAlignment="Center" Foreground="#DDFFFFFF"/>
+                                         Foreground="White"
+                                         Background="Transparent"
+                                         CaretBrush="LightGray"
+                                         BorderBrush="DarkGray"
+                                         Height="30"
+                                         Name="Pass"
+                                         mD:HintAssist.Hint="Enter password" 
+                                         Width="236" 
+                                         DockPanel.Dock="Right"
+                                         Margin="0,10,-6,0"/>
+                            <mD:PackIcon Kind="Password"
+                                         DockPanel.Dock="Left" 
+                                         VerticalAlignment="Center" 
+                                         Foreground="#DDFFFFFF"/>
                         </DockPanel>
-                        <Button HorizontalAlignment="Right" Margin="0,15,0,0" 
-                            Width="95" Height="20" FontWeight="Normal"
-                            Style="{DynamicResource MaterialDesignFlatAccentButton}" 
-                            Command="{Binding RegistrationCommand}">
+                        <Button HorizontalAlignment="Right"
+                                Margin="0,15,0,0" 
+                                Width="95" 
+                                Height="20" 
+                                FontWeight="Normal"
+                                Style="{DynamicResource MaterialDesignFlatAccentButton}" 
+                                Command="{Binding RegistrationCommand}">
                             <Button.Content>
                                 <TextBlock Foreground="#FF008DEA" Width="65" >
                                     <Underline FontSize="12" >Not a user?</Underline>
@@ -109,15 +130,20 @@
                             </Button.Content>
                         </Button>
                         <Button Content="Log in" 
-                            HorizontalAlignment="Center" Margin="0,40,0,0" 
-                            FontSize="18" Width="120" Height="40" 
-                            Command="{Binding LoginCommand}" mD:ButtonAssist.CornerRadius="15"
-                            CommandParameter="{Binding ElementName=Pass}" Padding="10,4,10,4" 
-                            FontWeight="Normal" VerticalAlignment="Center" Background="#FF0D2ED2"/>
+                                HorizontalAlignment="Center" 
+                                Margin="0,40,0,0" 
+                                FontSize="18" 
+                                Width="120" Height="40" 
+                                Command="{Binding LoginCommand}" 
+                                mD:ButtonAssist.CornerRadius="15"
+                                CommandParameter="{Binding ElementName=Pass}"
+                                Padding="10,4,10,4" 
+                                FontWeight="Normal" 
+                                VerticalAlignment="Center" 
+                                Background="#FF0D2ED2"/>
                     </StackPanel>
                 </Grid>
             </Border>
         </Border>
     </Border>
-    
 </UserControl>

@@ -2,24 +2,21 @@
 using System.Globalization; 
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
-
-namespace TrendyolApp.Services.Classes
+namespace TrendyolApp.Services.Classes;
+public class BitmapimageConverterService : IValueConverter
 {
-    public class BitmapimageConverterService : IValueConverter
+    public object? Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public object? Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        if (value != null)
         {
-            if (value != null)
-            {
-                BitmapImage image = new((Uri)value);
-                return image;
-            }
-            return null;
+            BitmapImage image = new((Uri)value);
+            return image;
         }
+        return null;
+    }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
     }
 }

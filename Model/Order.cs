@@ -12,7 +12,6 @@ public class Order
     public string? Notes { get; set; }
       
     //Declare
-    public string? SiteName { get; set; }
     public string? ProductCategory { get; set; }
     public string? TrackingNumber { get; set; }
     public string? Currency { get; set; } = "TRY";

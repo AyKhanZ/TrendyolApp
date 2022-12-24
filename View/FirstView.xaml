@@ -50,17 +50,25 @@
                             <ColumnDefinition Width="70"/>
                             <ColumnDefinition Width="70"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Trendyol application" Grid.Column="0"
+                        <TextBlock Text="Trendyol application" 
+                                   Grid.Column="0"
                                    Foreground="White" 
-                                   VerticalAlignment="Center" FontSize="14" 
-                                   Grid.ColumnSpan="2" Height="16"/>
-                        <TextBlock Grid.Column="1" Foreground="White" 
-                                   VerticalAlignment="Center" FontSize="24" Height="30">
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Grid.ColumnSpan="2" 
+                                   Height="16"/>
+                        <TextBlock Grid.Column="1" 
+                                   Foreground="White" 
+                                   VerticalAlignment="Center"
+                                   FontSize="24" Height="30">
                             Balance:
                         </TextBlock>
-                        <TextBlock Grid.Column="2" Foreground="White"
-                                   VerticalAlignment="Center" FontSize="24" 
-                                   Height="30" Text="{Binding user.Balance}"/>
+                        <TextBlock Grid.Column="2" 
+                                   Foreground="White"
+                                   VerticalAlignment="Center" 
+                                   FontSize="24" 
+                                   Height="30" 
+                                   Text="{Binding user.Balance}"/>
                     </Grid>
                     <Grid Grid.Row="1"  Margin="0,10,0,0" >
                         <Grid.ColumnDefinitions>
@@ -107,20 +115,16 @@
                                             <DataTemplate>
                                                 <DockPanel Width="350px">
                                                     <StackPanel DockPanel.Dock="Left">
-                                                        <Label Content="Tracking number: "/>
                                                         <Label Content="Invoice price: "/> 
-                                                        <Label Content="Site name: "/>
-                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Site link: "/>
                                                         <Label Content="Quantity: "/> 
                                                         <Label Content="Size: "/>
                                                         <Label Content="Color: "/>
                                                         <Label Content="Currency: "/>  
                                                     </StackPanel>
                                                     <StackPanel DockPanel.Dock="Top">
-                                                        <Label Content="{Binding TrackingNumber}"/>
                                                         <Label Content="{Binding Price}"/> 
-                                                        <Label Content="{Binding SiteName}"/>
-                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Link}"/>
                                                         <Label Content="{Binding Quantity}"/> 
                                                         <Label Content="{Binding Size}"/>
                                                         <Label Content="{Binding Color}"/>
@@ -141,19 +145,19 @@
                                             <DataTemplate>
                                                 <DockPanel Width="350px">
                                                     <StackPanel DockPanel.Dock="Left">
-                                                        <Label Content="Tracking number: "/>
                                                         <Label Content="Invoice price: "/> 
-                                                        <Label Content="Site name: "/>
-                                                        <Label Content="Product category: "/>
-                                                        <Label Content="Quantity: "/> 
+                                                        <Label Content="Site link: "/>
+                                                        <Label Content="Quantity: "/>
+                                                        <Label Content="Size: "/>
+                                                        <Label Content="Color: "/>
                                                         <Label Content="Currency: "/>  
                                                     </StackPanel>
                                                     <StackPanel DockPanel.Dock="Top">
-                                                        <Label Content="{Binding TrackingNumber}"/>
                                                         <Label Content="{Binding Price}"/> 
-                                                        <Label Content="{Binding SiteName}"/>
-                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Link}"/>
                                                         <Label Content="{Binding Quantity}"/> 
+                                                        <Label Content="{Binding Size}"/> 
+                                                        <Label Content="{Binding Color}"/> 
                                                         <Label Content="{Binding Currency}"/>  
                                                     </StackPanel>
                                                     <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image>
@@ -171,20 +175,20 @@
                                             <DataTemplate>
                                                 <DockPanel Width="350px">
                                                     <StackPanel DockPanel.Dock="Left">
-                                                        <Label Content="Tracking number: "/>
-                                                        <Label Content="Invoice price: "/> 
-                                                        <Label Content="Site name: "/>
-                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Invoice price: "/>
+                                                        <Label Content="Site link: "/>
                                                         <Label Content="Quantity: "/>
-                                                        <Label Content="Currency: "/> 
+                                                        <Label Content="Size: "/>
+                                                        <Label Content="Color: "/>
+                                                        <Label Content="Currency: "/>
                                                     </StackPanel>
                                                     <StackPanel DockPanel.Dock="Top">
-                                                        <Label Content="{Binding TrackingNumber}"/>
-                                                        <Label Content="{Binding Price}"/> 
-                                                        <Label Content="{Binding SiteName}"/>
-                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Price}"/>
+                                                        <Label Content="{Binding Link}"/>
                                                         <Label Content="{Binding Quantity}"/>
-                                                        <Label Content="{Binding Currency}"/> 
+                                                        <Label Content="{Binding Size}"/>
+                                                        <Label Content="{Binding Color}"/>
+                                                        <Label Content="{Binding Currency}"/>
                                                     </StackPanel>
                                                     <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image>
                                                 </DockPanel>
@@ -203,20 +207,20 @@
                                             <DataTemplate>
                                                 <DockPanel Width="350px">
                                                     <StackPanel DockPanel.Dock="Left">
-                                                        <Label Content="Tracking number: "/>
-                                                        <Label Content="Invoice price: "/> 
-                                                        <Label Content="Site name: "/>
-                                                        <Label Content="Product category: "/>
+                                                        <Label Content="Invoice price: "/>
+                                                        <Label Content="Site link: "/>
                                                         <Label Content="Quantity: "/>
+                                                        <Label Content="Size: "/>
+                                                        <Label Content="Color: "/>
                                                         <Label Content="Currency: "/>
                                                     </StackPanel>
                                                     <StackPanel DockPanel.Dock="Top">
-                                                        <Label Content="{Binding TrackingNumber}"/>
-                                                        <Label Content="{Binding Price}"/> 
-                                                        <Label Content="{Binding SiteName}"/>
-                                                        <Label Content="{Binding ProductCategory}"/>
+                                                        <Label Content="{Binding Price}"/>
+                                                        <Label Content="{Binding Link}"/>
                                                         <Label Content="{Binding Quantity}"/>
-                                                        <Label Content="{Binding Currency}"/> 
+                                                        <Label Content="{Binding Size}"/>
+                                                        <Label Content="{Binding Color}"/>
+                                                        <Label Content="{Binding Currency}"/>
                                                     </StackPanel>
                                                     <Image Margin="0 10 0 0" Source="{Binding Invoice}"></Image> 
                                                 </DockPanel>
@@ -227,9 +231,17 @@
                             </TabControl>
                         </Border>
                     </Grid> 
-                    <DockPanel Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0"> 
-                        <TextBlock DockPanel.Dock="Left" FontSize="20" Foreground="White">Account:</TextBlock>
-                        <TextBlock DockPanel.Dock="Right" Text="{Binding user.UserName}" FontSize="20" Margin="10,0,0,0" Foreground="#DDFFFFFF"/>
+                    <DockPanel Grid.Row="3" 
+                               HorizontalAlignment="Left" 
+                               VerticalAlignment="Center" 
+                               Margin="20,0,0,0"> 
+                        <TextBlock DockPanel.Dock="Left" 
+                                   FontSize="20" 
+                                   Foreground="White">Account:</TextBlock>
+                        <TextBlock DockPanel.Dock="Right" 
+                                   Text="{Binding user.UserName}" 
+                                   FontSize="20" Margin="10,0,0,0" 
+                                   Foreground="#DDFFFFFF"/>
                     </DockPanel> 
                 </Grid>
             </Border>

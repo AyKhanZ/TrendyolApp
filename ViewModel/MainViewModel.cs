@@ -27,9 +27,9 @@ public class MainViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            //json
             var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
             FileService.SaveData(json, "SerializeJSONAykhan.json");
+
             App.Current.Shutdown();
         });
     }

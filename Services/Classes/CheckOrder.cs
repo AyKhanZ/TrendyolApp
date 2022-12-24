@@ -10,11 +10,11 @@ public static class CheckOrder
     {
         if (!string.IsNullOrWhiteSpace(order?.Price)
             && !string.IsNullOrWhiteSpace(order?.Quantity)
-            && !string.IsNullOrWhiteSpace(order?.SiteName)
+            && !string.IsNullOrWhiteSpace(order?.Link)
             && !string.IsNullOrWhiteSpace(order?.ProductCategory)
             && !string.IsNullOrWhiteSpace(order?.TrackingNumber))
         {
-            if (Regex.IsMatch((order?.SiteName!), @"^[A-Za-z0-9.]+$"))
+            if (Regex.IsMatch((order?.Link!), @"^http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$"))
             {
                 if (Regex.IsMatch((order?.TrackingNumber!), @"^[0-9]+$"))
                 {
@@ -46,7 +46,7 @@ public static class CheckOrder
                 }
                 else { MessageBox.Show("Invalid tracing number! It must be contains only of digits!"); return false; }
             }
-            else { MessageBox.Show("Invalid sitename!Sitename must be contains only of althabit and digits!"); return false; }
+            else MessageBox.Show("Invalid link"); return false;
         }
         else { MessageBox.Show("Link,size,color,price rows are requared!"); return false; }
     }
@@ -74,10 +74,10 @@ public static class CheckOrder
                                 {
                                     if (Regex.IsMatch((order?.ShopDeliveryPrice!), @"^[0-9]+$") && order!.ShopDeliveryPrice!.Any(char.IsDigit))
                                     {
-                                        if (Convert.ToInt32(order.Price) <= 0 && Convert.ToInt32(order.ShopDeliveryPrice) <= 0) { MessageBox.Show("Price should be more than 0!"); return false; }
+                                        if (Convert.ToSingle(order.Price) <= 0 && Convert.ToSingle(order.ShopDeliveryPrice) <= 0) { MessageBox.Show("Price should be more than 0!"); return false; }
                                         else
                                         {
-                                            if (Users.UsersDict![user_info!]!.Balance - Convert.ToInt32(order?.Price) * Convert.ToInt32(order?.Quantity) - Convert.ToInt32(order?.ShopDeliveryPrice) * Convert.ToInt32(order?.Quantity) >= 0)
+                                            if (Users.UsersDict![user_info!]!.Balance - Convert.ToSingle(order?.Price) * Convert.ToInt32(order?.Quantity) - Convert.ToSingle(order?.ShopDeliveryPrice) * Convert.ToInt32(order?.Quantity) >= 0)
                                             {
                                                 return true;
                                             }

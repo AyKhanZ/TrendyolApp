@@ -28,7 +28,6 @@ public class RegistrationViewModel : ViewModelBase
             var a = CheckRegistration.CheckUser(user, ConfirmPassword);
             if (a == null)
             {
-                //Json
                 var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
                 FileService.SaveData(json, "SerializeJSONAykhan.json"); 
 

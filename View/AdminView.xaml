@@ -21,19 +21,21 @@
              Height="550" Width="800">
     <UserControl.Resources>
         <img:BitmapimageConverterService x:Key="UriToImageConverter"/>
-
     </UserControl.Resources>
 
     <Border CornerRadius="15">
+        
         <Border.Background>
             <ImageBrush ImageSource="/View/AdminImage.png" Stretch="UniformToFill"/>
         </Border.Background>
+
         <Border CornerRadius="10" BorderThickness="5" BorderBrush="White">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" Opacity="0.6">
                     <GradientStop Color="Black"/>
                 </LinearGradientBrush>
             </Border.Background>
+            
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
@@ -45,9 +47,11 @@
 
                 <TextBlock Grid.Row="0" Text="Admin panel" Foreground="White" Margin="10,0,0,0"
                            HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="16" Width="780"/>
+                
                 <TextBlock Grid.Row="1" Text="All users:" Foreground="White"
                                HorizontalAlignment="Center" VerticalAlignment="Center" 
                                FontSize="24" Width="105" Height="30"/>
+                
                 <Grid Grid.Row="2" Margin="0,0,0,5">
                     <Border CornerRadius="20" Background="White" Margin="10,3,20,3">
                         <Grid>
@@ -91,21 +95,42 @@
                             <ColumnDefinition Width="130"/>
                         </Grid.ColumnDefinitions>
                         
-                        <TextBlock Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Orders:" Height="30" Width="80" FontSize="24" Margin="222,0,0,8" Foreground="#DDFFFFFF"/>
-                        <Button Content="Delete" FontSize="20" Background="#FF673AB7"
-                                mD:ButtonAssist.CornerRadius="10" Command="{Binding Delete}" Margin="5" 
-                                Grid.Column="2" Width="110" Height="35"/>
-                        <Button Grid.Column="3" Content="Delete All" HorizontalAlignment="Center"
-                                mD:ButtonAssist.CornerRadius="10" Margin="10" Height="35" FontSize="16"
-                                Command="{Binding DeleteAll}" Width="110"/>
+                        <TextBlock Grid.Column="1" 
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Center" 
+                                   Text="Orders:" 
+                                   Height="30" Width="80" 
+                                   FontSize="24" 
+                                   Margin="222,0,0,8" 
+                                   Foreground="#DDFFFFFF"/>
+                        <Button Content="Delete" 
+                                Grid.Column="2" 
+                                FontSize="20" 
+                                Background="#FF673AB7"
+                                mD:ButtonAssist.CornerRadius="10" 
+                                Command="{Binding Delete}" 
+                                Margin="5" 
+                                Width="110" Height="35"/>
+                        <Button Grid.Column="3" 
+                                Content="Delete All"
+                                HorizontalAlignment="Center"
+                                mD:ButtonAssist.CornerRadius="10" 
+                                Margin="10" 
+                                Height="35" 
+                                FontSize="16"
+                                Command="{Binding DeleteAll}" 
+                                Width="110"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="7*"/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Border CornerRadius="20" Background="White" Margin="10,5,20,5">
-                            <ListBox Background="White" Margin="40,15,40,20"
+                        <Border CornerRadius="20" 
+                                Background="White" 
+                                Margin="10,5,20,5">
+                            <ListBox Background="White" 
+                                     Margin="40,15,40,20"
                                      ScrollViewer.CanContentScroll="False"
                                      ItemsSource="{Binding UsersOrdersList}"
                                      SelectedItem="{Binding UserOrder}">
@@ -113,10 +138,7 @@
                                     <DataTemplate>
                                         <DockPanel Width="350px">
                                             <StackPanel DockPanel.Dock="Left">
-                                                <Label Content="Tracking number: " />
                                                 <Label Content="Invoice price: "/>
-                                                <Label Content="Site name: "/>
-                                                <Label Content="Product category: "/>
                                                 <Label Content="Quantity: "/>
                                                 <Label Content="Currency: "/>
                                                 <Label Content="Size: "/>
@@ -127,10 +149,7 @@
                                                 <Label Content="In fillial: "/>
                                             </StackPanel>
                                             <StackPanel DockPanel.Dock="Top">
-                                                <Label Content="{Binding TrackingNumber}"/>
                                                 <Label Content="{Binding Price}"/>
-                                                <Label Content="{Binding SiteName}"/>
-                                                <Label Content="{Binding ProductCategory}"/>
                                                 <Label Content="{Binding Quantity}"/>
                                                 <Label Content="{Binding Currency}"/>
                                                 <Label Content="{Binding Size}"/>
@@ -155,17 +174,29 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <RadioButton Grid.Column="0" Command="{Binding RadioBtnCommand}" 
+                            <RadioButton Grid.Column="0" 
+                                         Command="{Binding RadioBtnCommand}" 
                                          IsChecked="{Binding Status.InAbroadwarehouse}" 
-                                         Content="In abroad warehouse" Foreground="#DDFFFFFF"/>
-                            <RadioButton Grid.Column="1" Command="{Binding RadioBtnCommand}" IsChecked="{Binding Status.Shipped}" Content="Shipped" Foreground="#DDFFFFFF"/>
-                            <RadioButton Grid.Column="2"  Command="{Binding RadioBtnCommand}" IsChecked="{Binding Status.InFillial}" Content="In fillial" Foreground="#DDFFFFFF"/>
-
+                                         Content="In abroad warehouse" 
+                                         Foreground="#DDFFFFFF"/>
+                            <RadioButton Grid.Column="1" 
+                                         Command="{Binding RadioBtnCommand}" 
+                                         IsChecked="{Binding Status.Shipped}" 
+                                         Content="Shipped" 
+                                         Foreground="#DDFFFFFF"/>
+                            <RadioButton Grid.Column="2" 
+                                         Command="{Binding RadioBtnCommand}" 
+                                         IsChecked="{Binding Status.InFillial}" 
+                                         Content="In fillial" Foreground="#DDFFFFFF"/>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Button Grid.Row="4" Height="50" Width="100" mD:ButtonAssist.CornerRadius="25" FontSize="18"
-                            Command="{Binding BackToLogin}" Margin="10,5,100,10" HorizontalAlignment="Right">
+                <Button Grid.Row="4" 
+                        Height="50" Width="100" 
+                        mD:ButtonAssist.CornerRadius="25" 
+                        FontSize="18"
+                        Command="{Binding BackToLogin}" 
+                        Margin="10,5,100,10" HorizontalAlignment="Right">
                     <mD:PackIcon Kind="ArrowBack" Width="50" Height="40"/>
                 </Button>
             </Grid>

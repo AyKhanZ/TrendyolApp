@@ -29,13 +29,17 @@ public class PlaceOrderViewModel : ViewModelBase
     {
         get => new(() =>
         {
+            order!.Color = "Black";
+            order!.Size = "M";
+            order!.Currency = "TRY";
             if (CheckOrder.CheckPlaceOrder(order, user_info))
             {
                 Users.UsersDict![user_info!]!.Balance -= Convert.ToInt32(order?.Price);
                 Users.UsersDict![user_info!]?.Orders?.Add(order!);
+                MessageBox.Show(order?.Color);
+                MessageBox.Show(order?.Size);
                 order = new();
 
-                //Json
                 var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
                 FileService.SaveData(json, "SerializeJSONAykhan.json"); 
 

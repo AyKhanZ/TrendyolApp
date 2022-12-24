@@ -8,17 +8,12 @@ using GalaSoft.MvvmLight.Messaging;
 using TrendyolApp.Message;
 using System.Windows.Controls;
 using TrendyolApp.Services.Classes;
-using System.Collections.ObjectModel;
-
 namespace TrendyolApp.ViewModel;
 public class LoginViewModel : ViewModelBase
 {
-    public Dictionary<string, string> LoginDict { get; set; } = new Dictionary<string, string>();
     public string? user_info { get; set; } = "";
     private readonly INavigationService? _navigationService;
     private readonly IMessenger? _messenger; 
-
-
     public LoginViewModel(INavigationService navigationService, IMessenger messenger )
     {
         var json = FileService.ReadData("SerializeJSONAykhan.json");
@@ -26,7 +21,6 @@ public class LoginViewModel : ViewModelBase
 
         _navigationService = navigationService;
         _messenger = messenger; 
-         
         _messenger.Register<ParameterMessage>(this, param =>
         {
             var User = param?.Message as User;

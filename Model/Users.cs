@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 namespace TrendyolApp.Model;
 public static class Users
 {

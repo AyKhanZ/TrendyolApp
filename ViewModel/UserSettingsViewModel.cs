@@ -31,16 +31,16 @@ public class UserSettingsViewModel : ViewModelBase
         get => new(param =>
         { 
             user!.Password = param?.Password;
+            user!.Orders = Users.UsersDict![user_info!].Orders;
             var a = CheckRegistration.CheckUser(user, ConfirmPassword);
             if(a == null) { 
                 Users.UsersDict?.Remove(user_info!); 
                 user_info = user.UserName;
                 var flag = Users.UsersDict?.TryAdd(user_info!, user).ToString();
 
-                //Json
                 var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
-                FileService.SaveData(json, "SerializeJSONAykhan.json"); 
-
+                FileService.SaveData(json, "SerializeJSONAykhan.json");
+                
                 _navigationService?.NavigateTo<FirstViewModel>(new ParameterMessage { Message = Users.UsersDict?[user_info!] });
             }
             else MessageBox.Show(a);

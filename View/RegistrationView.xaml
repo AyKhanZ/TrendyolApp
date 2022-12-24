@@ -18,8 +18,7 @@
              FontFamily="{DynamicResource MaterialDesignFont}"
              Height="550" Width="800"
              d:DataContext="{d:DesignInstance vm:RegistrationViewModel}"
-             Name="MyRegistrationView"
-             >
+             Name="MyRegistrationView">
 
     <UserControl.Resources>
 
@@ -36,7 +35,11 @@
         </Border.Background>
 
         <Border  CornerRadius="10">
-            <Border CornerRadius="10" BorderThickness="5" Opacity="1" RenderTransformOrigin="0.5,0.532" BorderBrush="White">
+            <Border CornerRadius="10"
+                    BorderThickness="5" 
+                    Opacity="1"
+                    RenderTransformOrigin="0.5,0.532"
+                    BorderBrush="White">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" Opacity="0.6">
@@ -58,9 +61,12 @@
                             <ColumnDefinition Width="40"/>
                             <ColumnDefinition Width="40"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Registration" Grid.Column="0"
+                        <TextBlock Text="Registration" 
+                                   Grid.Column="0"
                                    Foreground="White"
-                                   VerticalAlignment="Center" FontSize="14" Grid.ColumnSpan="2"/>
+                                   VerticalAlignment="Center"
+                                   FontSize="14" 
+                                   Grid.ColumnSpan="2"/>
 
                     </Grid>
                     <Grid Grid.Row="1"  Margin="0,0,0,0">
@@ -71,10 +77,10 @@
                     </Grid>
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="130*"/>
-                            <ColumnDefinition Width="200*"/>
-                            <ColumnDefinition Width="130*"/>
-                            <ColumnDefinition Width="200*"/>
+                            <ColumnDefinition Width="13*"/>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="13*"/>
+                            <ColumnDefinition Width="25*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -82,94 +88,170 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Column="0" Grid.Row="0"
-                                   Text="Username" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="1" Grid.Row="0"
-                                     MaxLength="15"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" mD:HintAssist.Hint="Ex: Elvin21"
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16"
+                        <TextBlock Grid.Column="0"
+                                   Grid.Row="0"
+                                   Text="Username" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="1" 
+                                 Grid.Row="0"
+                                 MaxLength="15"
+                                 Foreground="White"
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 mD:HintAssist.Hint="Ex: Elvin21"
+                                 Height="30" 
+                                 Margin="0,22,2,21" FontSize="16"
                                  Text="{Binding user.UserName}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="2" Grid.Row="0" Text="Address" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="3" Grid.Row="0" Height="30" 
-                                     MaxLength="25"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Margin="0,22,10,21" FontSize="16" mD:HintAssist.Hint="Ex: elvinazimov21@gmail.com"
+                        <TextBlock Grid.Column="2" 
+                                   Grid.Row="0" 
+                                   Text="Address" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20"
+                                   VerticalAlignment="Center" 
+                                   Height="24"
+                                   Width="91"/>
+                        <TextBox Grid.Column="3" 
+                                 Grid.Row="0" 
+                                 Height="30" 
+                                 MaxLength="30"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray" 
+                                 Margin="14,22,10,21" 
+                                 FontSize="16" 
+                                 mD:HintAssist.Hint="Ex: elvinazimov21@gmail.com"
                                  Text="{Binding user.Address}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="0" Grid.Row="1"
-                                   Text="Password" Foreground="White" HorizontalAlignment="Center"
-                                   FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
+                        <TextBlock Grid.Column="0"
+                                   Grid.Row="1"
+                                   Text="Password" 
+                                   Foreground="White" 
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
 
-                        <PasswordBox Grid.Column="1" Grid.Row="1" FontSize="16"
+                        <PasswordBox Grid.Column="1" 
+                                     Grid.Row="1" 
+                                     FontSize="16"
                                      MaxLength="15"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="220" 
-                                 x:Name="psWord" 
-                                 AllowDrop="False" mD:HintAssist.Hint="Ex: Elvin123" Margin="0,0,30,0">
+                                     Foreground="White" 
+                                     CaretBrush="LightGray"
+                                     BorderBrush="DarkGray"
+                                     Height="30" 
+                                     x:Name="psWord" 
+                                     AllowDrop="False" 
+                                     mD:HintAssist.Hint="Ex: Elvin123" 
+                                     Margin="0,22,2,21">
                             <PasswordBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </PasswordBox.Background>
                         </PasswordBox>
-                        <TextBlock Grid.Column="2" Grid.Row="1"
-                                   Text="Phone" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
+                        <TextBlock Grid.Column="2" 
+                                   Grid.Row="1"
+                                   Text="Phone" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   Height="24" 
+                                   Width="91"/>
                         <TextBox Grid.Column="3" Grid.Row="1"
-                                     MaxLength="10"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="220" 
-                                 Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="Ex: 050 650 43 21"
+                                 MaxLength="10"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 Height="30" Width="220" 
+                                 Margin="0,0,30,0" 
+                                 FontSize="16"
+                                 mD:HintAssist.Hint="Ex: 050 650 43 21"
                                  Text="{Binding user.Phone}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="0" Grid.Row="2" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20" 
-                                   x:Name="CpsWord" Text="Confirm"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="1" Grid.Row="2" FontSize="16"
-                                     MaxLength="15"
+                        <TextBlock Grid.Column="0" Grid.Row="2" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20" 
+                                   x:Name="CpsWord" 
+                                   Text="Confirm"
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="91"/>
+                        <TextBox Grid.Column="1" Grid.Row="2" 
+                                 FontSize="16"
+                                 MaxLength="15"
                                  Text="{Binding ConfirmPassword}"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="220" mD:HintAssist.Hint="Ex: Elvin123" 
-                                 AllowDrop="False" Margin="0,0,30,0">
+                                 Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray" 
+                                 Height="30" 
+                                 mD:HintAssist.Hint="Ex: Elvin123" 
+                                 AllowDrop="False" 
+                                 Margin="0,22,2,22">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="2" Grid.Row="2"
-                                   Text="FIN" Foreground="White" HorizontalAlignment="Center"
-                                   FontSize="20" VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="3" Grid.Row="2"
-                                     MaxLength="9"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="220" Margin="0,0,30,0" FontSize="16" mD:HintAssist.Hint="Ex: 3FXh2C8"
+                        <TextBlock Grid.Column="2" 
+                                   Grid.Row="2"
+                                   Text="FIN" 
+                                   Foreground="White" 
+                                   HorizontalAlignment="Center"
+                                   FontSize="20" 
+                                   VerticalAlignment="Center" 
+                                   Height="24"
+                                   Width="91"/>
+                        <TextBox Grid.Column="3" 
+                                 Grid.Row="2"
+                                 MaxLength="9"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray" BorderBrush="DarkGray"
+                                 Height="30"
+                                 Width="220"
+                                 Margin="0,0,30,0" 
+                                 FontSize="16"
+                                 mD:HintAssist.Hint="Ex: 3FXh2C8"
                                  Text="{Binding user.Fin}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
                             </TextBox.Background>
                         </TextBox>
-                        <TextBlock Grid.Column="0" Grid.Row="3"
-                                   Text="Serial" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="20"
-                                   VerticalAlignment="Center" Height="24" Width="91"/>
-                        <TextBox Grid.Column="1" Grid.Row="3" FontSize="16"
-                                     MaxLength="10"
-                                 Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="220" 
-                                 AllowDrop="False" Margin="0,0,30,0" mD:HintAssist.Hint="Ex: MM 100 345 098 211" 
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="3"
+                                   Text="Serial" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   Height="24" Width="91"/>
+                        <TextBox Grid.Column="1" 
+                                 Grid.Row="3"
+                                 FontSize="16"
+                                 MaxLength="10"
+                                 Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray" 
+                                 Height="30" 
+                                 Width="220" 
+                                 AllowDrop="False" 
+                                 Margin="0,21,2,22" 
+                                 mD:HintAssist.Hint="Ex: MM 100 345 098 211" 
                                  Text="{Binding user.Serial}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
@@ -181,14 +263,26 @@
                             <ColumnDefinition Width="0.2*"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Height="50" Width="100" mD:ButtonAssist.CornerRadius="25" FontSize="18"
-                            Command="{Binding BackToLoginCommand}" Margin="10,5,10,10" HorizontalAlignment="Right">
-                            <mD:PackIcon Kind="ArrowBack" Width="50" Height="40"/>
+                        <Button Grid.Column="0" 
+                                Height="50" Width="100" 
+                                mD:ButtonAssist.CornerRadius="25"
+                                FontSize="18"
+                                Command="{Binding BackToLoginCommand}" 
+                                Margin="10,5,10,10" 
+                                HorizontalAlignment="Right">
+                            <mD:PackIcon Kind="ArrowBack" 
+                                         Width="50" 
+                                         Height="40"/>
                         </Button>
-                        <Button Grid.Column="1" Width="200" Height="50" FontSize="22"
-                                Command="{Binding Registration}" Margin="0 0 350 0"
+                        <Button Grid.Column="1" 
+                                Width="200" 
+                                Height="50"
+                                FontSize="22"
+                                Command="{Binding Registration}" 
+                                Margin="0 0 350 0"
                                 CommandParameter="{Binding ElementName=psWord}"
-                                mD:ButtonAssist.CornerRadius="15" Content="Register"/>
+                                mD:ButtonAssist.CornerRadius="15"
+                                Content="Register"/>
                     </Grid>
                 </Grid>
             </Border>

@@ -1,6 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command; 
-using System.Windows; 
 using TrendyolApp.Services.Interfaces;
 using TrendyolApp.Model;
 using GalaSoft.MvvmLight.Messaging;
@@ -33,7 +32,7 @@ public class BalanceViewModel : ViewModelBase
             if (CheckOrder.CheckBalance(Card))
             {
                 Users.UsersDict![user_info!].Balance += Convert.ToSingle(Card?.Balance);
-                //Json
+
                 var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
                 FileService.SaveData(json, "SerializeJSONAykhan.json"); 
 

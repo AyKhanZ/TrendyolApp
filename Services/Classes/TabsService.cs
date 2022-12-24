@@ -8,7 +8,7 @@ static public class TabsService
         {
             foreach (var item in user?.Orders!)
             {
-                if (!listOfTabs.OrdersInFillial.Contains(item) && item!.Status!.InFillial!)
+                if (!listOfTabs!.OrdersInFillial.Contains(item) && item!.Status!.InFillial!)
                 {
                     listOfTabs.OrdersInFillial.Add(item);
                 }
@@ -26,6 +26,6 @@ static public class TabsService
                 }
             }
         }
-        return listOfTabs;
+        return listOfTabs!;
     }
 }

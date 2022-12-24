@@ -23,7 +23,7 @@ public class FirstViewModel : ViewModelBase
             user = param?.Message as User;
             user_info = user?.UserName;
             TabsList = new();
-            TabsList = TabsService.SortByTabs(user,TabsList); 
+            TabsList = TabsService.SortByTabs(user,TabsList);
         });
     }
     public RelayCommand Settings
@@ -58,7 +58,6 @@ public class FirstViewModel : ViewModelBase
     {
         get => new(() =>
         {
-            //Json
             var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
             FileService.SaveData(json, "SerializeJSONAykhan.json");
 

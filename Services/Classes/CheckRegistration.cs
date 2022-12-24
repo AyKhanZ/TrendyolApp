@@ -39,22 +39,17 @@ public static class CheckRegistration
                                 }
                                 return "Invalid email! Email must contain '@',digits,althabits!";
                             }
-                            return "Serial in the beginning must have 2-3 upper english alphabit and 7-10 digits!\n(Ex: AA1234567 or AKP1234567)";
+                            return "Serial in the beginning must have 2-3 uppercase english alphabit and digits!\n(Ex: AA1234567 or AKP1234567)";
                         }
                         return "Password is not equal confirm password!";
                     }
-                    return "The password must be at least 8 characters long and contain 1 digit ,1 uppercase (A-Z) and 1 lowercase (a-z) letters";
-
+                    return "The password must be at least 8 characters long and contain 1 digits,uppercase(A-Z) and lowercase(a-z) letters";
                 }
                 return "Choose another username!";
-
             }
             return "Incorrect username format!\n" +
-            "Username\'s length must be more than 4 and less than 15 simbols and must be english althabit.Can be contain of any simbols!";
+            "Username must be than 4 any simbols and must be english althabit!";
         }
         return "Line empty!";
     }
-
-
-
 }

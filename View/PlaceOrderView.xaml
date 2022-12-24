@@ -64,12 +64,23 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0"
-                                   Text="Enter URL links for your orders" Foreground="White"
-                                   HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                   VerticalAlignment="Center" Height="24" Width="300"/>
-                        <TextBox Grid.Row="1" Foreground="White" CaretBrush="LightGray"
-                                 BorderBrush="DarkGray" Height="30" Width="750" mD:HintAssist.Hint="Ex: http://Trendyol"
-                                 Margin="10 0 0 0" FontSize="16" Text="{Binding order.Link}"
+                                   Text="Enter URL links for your orders" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Left" 
+                                   FontSize="20" 
+                                   Margin="10 0 0 0"
+                                   VerticalAlignment="Center" 
+                                   Height="24" 
+                                   Width="300"/>
+                        <TextBox Grid.Row="1" Foreground="White" 
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 Height="30"
+                                 Width="750" 
+                                 mD:HintAssist.Hint="Ex: http://Trendyol"
+                                 Margin="10 0 0 0" 
+                                 FontSize="16" 
+                                 Text="{Binding order.Link}"
                                  MaxLength="30"
                                  HorizontalAlignment="Left">
                             <TextBox.Background>
@@ -88,80 +99,148 @@
                                 <RowDefinition/> 
                                 <RowDefinition/> 
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Size" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="70"/>
+                            <TextBlock Grid.Row="0" Grid.Column="0" 
+                                       Text="Size" 
+                                       Foreground="White"
+                                       HorizontalAlignment="Left"
+                                       FontSize="20"
+                                       Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24" Width="70"/>
                             <TextBox Grid.Row="1" Grid.Column="0"
                                      MaxLength="4"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="240" Text="{Binding order.Size}" Margin="10 0 0 0" FontSize="16" 
-                                 HorizontalAlignment="Left" mD:HintAssist.Hint="Ex: S">
+                                     Foreground="White" 
+                                     CaretBrush="LightGray"
+                                     BorderBrush="DarkGray"
+                                     Height="30" Width="240" 
+                                     Text="{Binding order.Size}"
+                                     Margin="10 0 0 0" FontSize="16" 
+                                     HorizontalAlignment="Left"
+                                     mD:HintAssist.Hint="Ex: S">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
                             </TextBox>
-                            <TextBlock Grid.Row="0" Grid.Column="1" Text="Color" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="70"/>
+                            <TextBlock Grid.Row="0"
+                                       Grid.Column="1"
+                                       Text="Color" 
+                                       Foreground="White"
+                                       HorizontalAlignment="Left" 
+                                       FontSize="20" Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24" Width="70"/>
                             <TextBox Grid.Row="1" Grid.Column="1"
                                      MaxLength="15"
-                                     Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="240" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: Blue" 
-                                 Text="{Binding order.Color}" HorizontalAlignment="Left">
+                                     Foreground="White" 
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray"
+                                     Height="30" Width="240" 
+                                     Margin="10 0 0 0" 
+                                     FontSize="16" 
+                                     mD:HintAssist.Hint="Ex: Blue" 
+                                     Text="{Binding order.Color}" 
+                                     HorizontalAlignment="Left">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
                             </TextBox>
 
-                            <TextBlock Grid.Row="0" Grid.Column="2" Text="Special notes" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="150"/>
+                            <TextBlock Grid.Row="0" Grid.Column="2" 
+                                       Text="Special notes" 
+                                       Foreground="White"
+                                       HorizontalAlignment="Left" 
+                                       FontSize="20" Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24" Width="150"/>
                             <TextBox Grid.Row="1" Grid.Column="2"
                                      MaxLength="15"
-                                 Foreground="White"
-                                 CaretBrush="LightGray" BorderBrush="DarkGray" 
-                                 Height="30" Width="240" Margin="10 0 0 0" FontSize="16" 
-                                 mD:HintAssist.Hint=" . . ."
-                                 Text="{Binding order.Notes}" HorizontalAlignment="Left">
+                                     Foreground="White"
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray" 
+                                     Height="30"
+                                     Width="240"
+                                     Margin="10 0 0 0" 
+                                     FontSize="16" 
+                                     mD:HintAssist.Hint=" . . ."
+                                     Text="{Binding order.Notes}" 
+                                     HorizontalAlignment="Left">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
                             </TextBox>
 
-                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Quantity" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="100"/>
+                            <TextBlock Grid.Row="2" 
+                                       Grid.Column="0"
+                                       Text="Quantity"
+                                       Foreground="White"
+                                       HorizontalAlignment="Left" 
+                                       FontSize="20" 
+                                       Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24"
+                                       Width="100"/>
                             <TextBox Grid.Row="3" Grid.Column="0"
                                      MaxLength="4"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray" 
-                                 Height="30" Width="240" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: 1"
-                                 Text="{Binding order.Quantity}" HorizontalAlignment="Left">
+                                     Foreground="White" 
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray" 
+                                     Height="30" Width="240" 
+                                     Margin="10 0 0 0" 
+                                     FontSize="16"
+                                     mD:HintAssist.Hint="Ex: 1"
+                                     Text="{Binding order.Quantity}" 
+                                     HorizontalAlignment="Left">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
                             </TextBox>
 
-                            <TextBlock Grid.Row="2" Grid.Column="1" Text="Price(TL)" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="100"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1"
+                                       Text="Price(TL)" 
+                                       Foreground="White"
+                                       HorizontalAlignment="Left" 
+                                       FontSize="20" 
+                                       Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24" Width="100"/>
                             <TextBox Grid.Row="3" Grid.Column="1"
                                      MaxLength="6"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30"  Width="240" Margin="10 0 0 0" FontSize="16" 
-                                 Text="{Binding order.Price}" HorizontalAlignment="Left" mD:HintAssist.Hint="Ex: 10 TL">
+                                 
+                                     Foreground="White" 
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray"
+                                 
+                                     Height="30"  Width="240" 
+                                     Margin="10 0 0 0" FontSize="16" 
+                                 
+                                     Text="{Binding order.Price}" 
+                                     HorizontalAlignment="Left" 
+                                     mD:HintAssist.Hint="Ex: 10 TL">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
                             </TextBox>
 
-                            <TextBlock Grid.Row="2" Grid.Column="2" Text="Shop delivery price(TL)" Foreground="White"
-                                       HorizontalAlignment="Left" FontSize="20" Margin="10 0 0 0"
-                                       VerticalAlignment="Center" Height="24" Width="210"/>
+                            <TextBlock Grid.Row="2" 
+                                       Grid.Column="2"
+                                       Text="Shop delivery price(TL)" 
+                                       Foreground="White"
+                                       HorizontalAlignment="Left" 
+                                       FontSize="20" Margin="10 0 0 0"
+                                       VerticalAlignment="Center" 
+                                       Height="24" Width="210"/>
                             <TextBox Grid.Row="3" Grid.Column="2"
                                      MaxLength="6"
-                                 Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                                 Height="30" Width="240" Margin="10 0 0 0" FontSize="16" mD:HintAssist.Hint="Ex: 5 TL" 
-                                 Text="{Binding order.ShopDeliveryPrice}" HorizontalAlignment="Left">
+                                     Foreground="White" 
+                                     CaretBrush="LightGray" 
+                                     BorderBrush="DarkGray"
+                                     Height="30" 
+                                     Width="240"
+                                     Margin="10 0 0 0" 
+                                     FontSize="16" 
+                                     mD:HintAssist.Hint="Ex: 5 TL" 
+                                     Text="{Binding order.ShopDeliveryPrice}"
+                                     HorizontalAlignment="Left">
                                 <TextBox.Background>
                                     <SolidColorBrush Color="White" Opacity="0.3"/>
                                 </TextBox.Background>
@@ -174,9 +253,13 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Grid.Column="0" Height="50" Width="100" mD:ButtonAssist.CornerRadius="25" 
-                            Command="{Binding BackToFirst}" Margin="10,5,10,10" HorizontalAlignment="Right">
-                            <mD:PackIcon Kind="ArrowBack" Width="50" Height="40"/>
+                        <Button Grid.Column="0" Height="50"
+                                Width="100" mD:ButtonAssist.CornerRadius="25" 
+                                Command="{Binding BackToFirst}" 
+                                Margin="10,5,10,10" HorizontalAlignment="Right">
+                            <mD:PackIcon Kind="ArrowBack" 
+                                         Width="50" 
+                                         Height="40"/>
                         </Button>
                         <Button Grid.Column="1" 
                                 Width="200" 

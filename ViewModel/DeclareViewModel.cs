@@ -33,6 +33,7 @@ public class DeclareViewModel : ViewModelBase
         {
             order!.Color = "Black";
             order!.Size = "M";
+            order!.Currency = "TRY";
             if (CheckOrder.CheckDeclareOrder(order, user_info))
             {
                 Users.UsersDict![user_info!]!.Balance -= Convert.ToInt32(order?.Price) * Convert.ToInt32(order?.Quantity);
@@ -40,7 +41,7 @@ public class DeclareViewModel : ViewModelBase
 
                 Users.UsersDict[user_info!]?.Orders?.Add(order!);
                 order = new();
-                //Json
+
                 var json = SerialiazibleService<Dictionary<string, User>>.Serialization(Users.UsersDict!);
                 FileService.SaveData(json, "SerializeJSONAykhan.json"); 
 
