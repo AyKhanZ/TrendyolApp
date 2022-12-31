@@ -226,7 +226,7 @@
                                  Width="220"
                                  Margin="0,0,30,0" 
                                  FontSize="16"
-                                 mD:HintAssist.Hint="Ex: 3FXh2C8"
+                                 mD:HintAssist.Hint="Ex: 3FXH2C8"
                                  Text="{Binding user.Fin}">
                             <TextBox.Background>
                                 <SolidColorBrush Color="White" Opacity="0.3"/>
