@@ -4,9 +4,7 @@ using TrendyolApp.ViewModel;
 using GalaSoft.MvvmLight.Messaging;
 using SimpleInjector;
 using System.Windows;
-using TrendyolApp.Services.Classes;
-using TrendyolApp.Message;
-
+using TrendyolApp.Services.Classes; 
 namespace TrendyolApp;
 public partial class App : Application
 {
